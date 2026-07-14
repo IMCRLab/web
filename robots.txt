@@ -1,1 +1,1 @@
-Sitemap: http://imcrl.com/sitemap.xml
+Sitemap: https://imcrl.com/sitemap.xml
