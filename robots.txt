@@ -1,1 +1,1 @@
-Sitemap: https://imcrlab.github.io/web/sitemap.xml
+Sitemap: https://imcrl.com/sitemap.xml
