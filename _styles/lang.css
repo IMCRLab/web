@@ -12,39 +12,49 @@ html[data-lang=zh] .lang-en {
 
 .lang-switch {
   display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  margin-left: 6px;
-  padding: 5px;
+  align-items: stretch;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: var(--overlay);
   text-transform: none;
   letter-spacing: 0;
+  z-index: 12;
 }
 
 .lang-switch button {
   margin: 0;
-  padding: 2px 4px;
+  padding: 6px 14px;
   border: none;
-  background: none;
+  background: transparent;
   color: inherit;
   font: inherit;
-  font-weight: var(--semi-bold);
+  font-size: 0.85rem;
+  font-weight: var(--bold);
   letter-spacing: 0.04em;
-  opacity: 0.4;
+  line-height: 1.2;
   cursor: pointer;
+}
+
+.lang-switch button + button {
+  border-left: 1px solid currentColor;
 }
 
 .lang-switch button:hover {
   color: var(--primary);
-  opacity: 1;
 }
 
 .lang-switch button[aria-pressed=true] {
-  color: var(--primary);
-  opacity: 1;
+  background: var(--primary);
+  color: var(--background);
 }
 
-.lang-switch-sep {
-  opacity: 0.35;
+header[data-big] .lang-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 /*# sourceMappingURL=lang.css.map */

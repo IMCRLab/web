@@ -10,6 +10,11 @@
       document.documentElement.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
     })();
   </script>
+  <style>
+    .lang-zh { display: none !important; }
+    html[data-lang="zh"] .lang-zh { display: revert !important; }
+    html[data-lang="zh"] .lang-en { display: none !important; }
+  </style>
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -417,6 +422,11 @@
     
   </a>
 
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang-set="zh" aria-pressed="false">中</button>
+  </div>
+
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
   <nav>
@@ -450,11 +460,6 @@
         </a>
       
     
-    <div class="lang-switch" role="group" aria-label="Language">
-      <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
-      <span class="lang-switch-sep" aria-hidden="true">/</span>
-      <button type="button" data-lang-set="zh" aria-pressed="false">中</button>
-    </div>
   </nav>
 </header>
 
