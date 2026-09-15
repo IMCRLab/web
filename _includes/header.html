@@ -43,6 +43,11 @@
     {% endif %}
   </a>
 
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang-set="zh" aria-pressed="false">中</button>
+  </div>
+
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
   <nav>
@@ -62,10 +67,5 @@
         </a>
       {% endif %}
     {% endfor %}
-    <div class="lang-switch" role="group" aria-label="Language">
-      <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
-      <span class="lang-switch-sep" aria-hidden="true">/</span>
-      <button type="button" data-lang-set="zh" aria-pressed="false">中</button>
-    </div>
   </nav>
 </header>

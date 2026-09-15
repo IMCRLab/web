@@ -7,6 +7,11 @@
       document.documentElement.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
     })();
   </script>
+  <style>
+    .lang-zh { display: none !important; }
+    html[data-lang="zh"] .lang-zh { display: revert !important; }
+    html[data-lang="zh"] .lang-en { display: none !important; }
+  </style>
   {% include analytics.html %}
   {% include verification.html %}
   {% include meta.html %}
