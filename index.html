@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-dark="false">
+<html lang="en" data-dark="false" data-lang="en" data-title-en="IMCRL" data-title-zh="IMCRL">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script>
+    (function () {
+      var lang = window.localStorage.getItem("imcrl-lang");
+      if (lang !== "zh") lang = "en";
+      document.documentElement.setAttribute("data-lang", lang);
+      document.documentElement.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
+    })();
+  </script>
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -48,17 +56,17 @@
 <link rel="icon" href="/images/icon.png">
 
 <meta name="title" content="">
-<meta name="description" content="智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。">
+<meta name="description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
 
 <meta property="og:title" content="">
 <meta property="og:site_title" content="IMCRL">
-<meta property="og:description" content="智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。">
+<meta property="og:description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
 <meta property="og:url" content="http://imcrl.com">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="">
-<meta property="twitter:description" content="智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。">
+<meta property="twitter:description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
 <meta property="twitter:url" content="http://imcrl.com">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
@@ -74,7 +82,7 @@
       "@type": "WebSite",
     
     "name": "",
-    "description": "智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。",
+    "description": "The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.",
     "headline": "",
     "publisher": {
       "@type": "Organization",
@@ -212,6 +220,10 @@
 
   
     <link href="/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/lang.css" rel="stylesheet">
   
 
   
@@ -359,6 +371,8 @@
 
   <script src="/_scripts/fetch-tags.js"></script>
 
+  <script src="/_scripts/lang.js"></script>
+
   <script src="/_scripts/search.js"></script>
 
   <script src="/_scripts/site-search.js"></script>
@@ -446,7 +460,7 @@
       </span>
     
     
-      <span class="title-text" data-tooltip="Home">
+      <span class="title-text" data-tooltip="Home" data-tooltip-en="Home" data-tooltip-zh="首页">
         
           <span class="title">IMCRL</span>
         
@@ -461,29 +475,38 @@
     
     
       
-        <a href="/research/" data-tooltip="Research directions and publications">
-          Research
+        <a href="/research/" data-tooltip="Research directions" data-tooltip-en="Research directions" data-tooltip-zh="研究方向">
+          <span class="lang-en">Research</span><span class="lang-zh">研究</span>
+
         </a>
       
     
       
-        <a href="/team/" data-tooltip="About our team">
-          Team
+        <a href="/team/" data-tooltip="About our team" data-tooltip-en="About our team" data-tooltip-zh="团队介绍">
+          <span class="lang-en">Team</span><span class="lang-zh">团队</span>
+
         </a>
       
     
       
-        <a href="/news/" data-tooltip="Lab news and updates">
-          News
+        <a href="/news/" data-tooltip="Lab news and updates" data-tooltip-en="Lab news and updates" data-tooltip-zh="新闻与动态">
+          <span class="lang-en">News</span><span class="lang-zh">新闻</span>
+
         </a>
       
     
       
-        <a href="/contact/" data-tooltip="Email, address, and location">
-          Contact
+        <a href="/contact/" data-tooltip="Email and address" data-tooltip-en="Email and address" data-tooltip-zh="邮箱与地址">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+
         </a>
       
     
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
+      <span class="lang-switch-sep" aria-hidden="true">/</span>
+      <button type="button" data-lang-set="zh" aria-pressed="false">中</button>
+    </div>
   </nav>
 </header>
 
@@ -507,9 +530,14 @@
   <section class="background" data-size="page">
     <h1 id="imcrl">IMCRL</h1>
 
-<p>Intelligent Mechatronics and Control Research Laboratory</p>
+<p><span class="lang-en">Intelligent Mechatronics and Control Research Laboratory</span><span class="lang-zh">智能机电与控制实验室</span></p>
 
-<p>智能机电与控制实验室（Intelligent Mechatronics and Control Research Laboratory，IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔，现有师生二十余人。实验室面向智能机器人与先进机电系统的发展需求，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展前沿研究，致力于推动智能机电技术的创新发展与产业应用。</p>
+<div class="lang-en">
+<p>The Intelligent Mechatronics and Control Research Laboratory (IMCRL) is part of the Advanced Electronic Manufacturing Center in the School of Mechanical Science and Engineering at Huazhong University of Science and Technology. Led by Professor Min Li, the laboratory currently has more than twenty faculty members and students. We address the needs of intelligent robots and advanced mechatronic systems through research on embodied human–robot interaction, dexterous manipulation, intelligent electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons, with the goal of advancing both scientific innovation and industrial application.</p>
+</div>
+<div class="lang-zh">
+<p>智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔，现有师生二十余人。实验室面向智能机器人与先进机电系统的发展需求，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展前沿研究，致力于推动智能机电技术的创新发展与产业应用。</p>
+</div>
   </section>
 
   
@@ -523,28 +551,42 @@
   <size></size>
 -->
 
-<h2 id="research-directions">Research Directions</h2>
+<h2 id="research-directions研究方向">
+<span class="lang-en">Research Directions</span><span class="lang-zh">研究方向</span>
+</h2>
 
 <div class="card" data-style="">
-  <a href="/research/interaction" aria-label="交互" class="card-image">
-    <img src="/images/research/interaction.jpg" alt="交互" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/research/interaction" aria-label="card link" class="card-image">
+    <img src="/images/research/interaction.jpg" alt="card image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
+    
+    
     
       <a href="/research/interaction" class="card-title">
-        交互
-    </a>
+        <span class="lang-en">Interaction</span><span class="lang-zh">交互</span>
+
+      </a>
     
 
     
-      <span class="card-subtitle">Interaction</span>
+    
+    
+      <span class="card-subtitle">
+        <span class="lang-en">Embodied Human–Robot Interaction</span><span class="lang-zh">具身智能人机交互</span>
+
+      </span>
     
 
+    
+    
     
       <p>
-        具身智能人机交互。构建覆盖感知、认知、生成与执行的一体化框架，实现自然、富有情感的人机交流。
-
+        <span class="lang-en">An integrated perception–cognition–generation–execution framework for natural, affective human–robot communication.
+</span>
+        <span class="lang-zh">构建覆盖感知、认知、生成与执行的一体化交互框架，实现自然、富有情感的人机交流。
+</span>
       </p>
     
 
@@ -553,25 +595,37 @@
 </div>
 
 <div class="card" data-style="">
-  <a href="/research/manipulation" aria-label="操作" class="card-image">
-    <img src="/images/research/manipulation-hand.jpg" alt="操作" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/research/manipulation" aria-label="card link" class="card-image">
+    <img src="/images/research/manipulation-hand.jpg" alt="card image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
+    
+    
     
       <a href="/research/manipulation" class="card-title">
-        操作
-    </a>
+        <span class="lang-en">Manipulation</span><span class="lang-zh">操作</span>
+
+      </a>
     
 
     
-      <span class="card-subtitle">Manipulation</span>
+    
+    
+      <span class="card-subtitle">
+        <span class="lang-en">Dexterous Manipulation</span><span class="lang-zh">灵巧操作</span>
+
+      </span>
     
 
+    
+    
     
       <p>
-        灵巧操作。推进灵巧手、多模态感知与力触融合模型，服务精细抓取与富接触作业。
-
+        <span class="lang-en">Dexterous hands, multimodal sensing, and visuo-tactile models for fine grasping and contact-rich tasks.
+</span>
+        <span class="lang-zh">推进灵巧手、多模态感知与力触融合模型，服务精细抓取与富接触作业。
+</span>
       </p>
     
 
@@ -580,25 +634,37 @@
 </div>
 
 <div class="card" data-style="">
-  <a href="/research/electromagnetics" aria-label="电磁" class="card-image">
-    <img src="/images/research/electromagnetics.jpg" alt="电磁" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/research/electromagnetics" aria-label="card link" class="card-image">
+    <img src="/images/research/electromagnetics.jpg" alt="card image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
+    
+    
     
       <a href="/research/electromagnetics" class="card-title">
-        电磁
-    </a>
+        <span class="lang-en">Electromagnetics</span><span class="lang-zh">电磁</span>
+
+      </a>
     
 
     
-      <span class="card-subtitle">Electromagnetics</span>
+    
+    
+      <span class="card-subtitle">
+        <span class="lang-en">Sensing and Magnetic Touch</span><span class="lang-zh">智能电磁感知与磁触觉</span>
+
+      </span>
     
 
+    
+    
     
       <p>
-        智能电磁感知与磁触觉。面向检测、传感与阵列化多维力感知。
-
+        <span class="lang-en">Electromagnetic inspection and arrayed magnetic tactile sensing for contact force and industrial measurement.
+</span>
+        <span class="lang-zh">面向检测、传感与阵列化多维力感知。
+</span>
       </p>
     
 
@@ -607,25 +673,37 @@
 </div>
 
 <div class="card" data-style="">
-  <a href="/research/others" aria-label="其他" class="card-image">
-    <img src="/images/research/others-device.jpg" alt="其他" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/research/others" aria-label="card link" class="card-image">
+    <img src="/images/research/others-device.jpg" alt="card image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
+    
+    
       <a href="/research/others" class="card-title">
-        其他
-    </a>
+        <span class="lang-en">Others</span><span class="lang-zh">其他</span>
+
+      </a>
     
 
     
-      <span class="card-subtitle">Others</span>
+    
+    
+      <span class="card-subtitle">
+        <span class="lang-en">Wearable Exoskeletons</span><span class="lang-zh">可穿戴外骨骼</span>
+
+      </span>
     
 
+    
+    
     
       <p>
-        可穿戴外骨骼。围绕下肢人机共融康复与助行，形成轻量化、个性化助力方案。
-
+        <span class="lang-en">Lower-limb rehabilitation and walking assistance with lightweight, personalized exoskeleton systems.
+</span>
+        <span class="lang-zh">围绕下肢人机共融康复与助行，形成轻量化、个性化助力方案。
+</span>
       </p>
     
 
@@ -646,17 +724,23 @@
 -->
 
 <div class="feature">
-  <a href="/team" class="feature-image" aria-label="Team">
-    <img src="/images/research/interaction.jpg" loading="lazy" alt="Team" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/team" class="feature-image" aria-label="span class lang-en Team span span class lang-zh 团队 span">
+    <img src="/images/research/interaction.jpg" loading="lazy" alt="span class lang-en Team span span class lang-zh 团队 span" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
-      <p class="feature-title">Team</p>
+      <p class="feature-title"><span class="lang-en">Team</span><span class="lang-zh">团队</span>
+</p>
     
     
-<p>由李敏教授领衔，现有师生二十余人。</p>
+<div class="lang-en">
+Led by Professor Min Li, IMCRL currently has more than twenty members.
 
-<div class="button-wrapper">
+
+
+
+
+  <div class="button-wrapper">
     <a class="button" href="/team" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
       <i class="icon fa-solid fa-arrow-right"></i>
       
@@ -665,6 +749,26 @@
     </a>
   </div>
 
+
+</div>
+<div class="lang-zh">
+由李敏教授领衔，现有师生二十余人。
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="/team" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
+      <i class="icon fa-solid fa-arrow-right"></i>
+      
+        <span>了解团队</span>
+      
+    </a>
+  </div>
+
+
+</div>
 
   </div>
 </div>
@@ -704,13 +808,16 @@
   <div>
     © 2026
     IMCRL
-      |   Built with
+      |  
+    <span class="lang-en">Built with</span><span class="lang-zh">本站使用</span>
+
     <a href="https://github.com/greenelab/lab-website-template">
       Lab Website Template
     </a>
+    <span class="lang-zh"> 构建</span>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" data-tooltip-en="Dark mode" data-tooltip-zh="深色模式" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>

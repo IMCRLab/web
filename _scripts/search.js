@@ -134,10 +134,12 @@
       // show all info boxes
       boxes.forEach((info) => (info.style.display = ""));
 
-      // info template
+      const zh = document.documentElement.dataset.lang === "zh";
       let info = "";
-      info += `Showing ${x.toLocaleString()} of ${n.toLocaleString()} results<br>`;
-      info += "<a href='./'>Clear search</a>";
+      info += zh
+        ? `显示 ${x.toLocaleString()} / ${n.toLocaleString()} 条结果<br>`
+        : `Showing ${x.toLocaleString()} of ${n.toLocaleString()} results<br>`;
+      info += zh ? "<a href='./'>清除搜索</a>" : "<a href='./'>Clear search</a>";
 
       // set info HTML string
       boxes.forEach((el) => (el.innerHTML = info));
@@ -210,6 +212,6 @@
 
   // after page loads
   window.addEventListener("load", searchFromUrl);
-  // after tags load
   window.addEventListener("tagsfetched", searchFromUrl);
+  window.addEventListener("langchange", searchFromUrl);
 }

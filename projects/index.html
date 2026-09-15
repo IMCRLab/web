@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-dark="false">
+<html lang="en" data-dark="false" data-lang="en" data-title-en="Projects | IMCRL" data-title-zh="Projects | IMCRL">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script>
+    (function () {
+      var lang = window.localStorage.getItem("imcrl-lang");
+      if (lang !== "zh") lang = "en";
+      document.documentElement.setAttribute("data-lang", lang);
+      document.documentElement.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
+    })();
+  </script>
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -48,17 +56,17 @@
 <link rel="icon" href="/images/icon.png">
 
 <meta name="title" content="Projects">
-<meta name="description" content="智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。">
+<meta name="description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
 
 <meta property="og:title" content="Projects">
 <meta property="og:site_title" content="IMCRL">
-<meta property="og:description" content="智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。">
+<meta property="og:description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
 <meta property="og:url" content="http://imcrl.com">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Projects">
-<meta property="twitter:description" content="智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。">
+<meta property="twitter:description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
 <meta property="twitter:url" content="http://imcrl.com">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
@@ -74,7 +82,7 @@
       "@type": "WebSite",
     
     "name": "Projects",
-    "description": "智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。",
+    "description": "The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.",
     "headline": "Projects",
     "publisher": {
       "@type": "Organization",
@@ -212,6 +220,10 @@
 
   
     <link href="/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/lang.css" rel="stylesheet">
   
 
   
@@ -359,6 +371,8 @@
 
   <script src="/_scripts/fetch-tags.js"></script>
 
+  <script src="/_scripts/lang.js"></script>
+
   <script src="/_scripts/search.js"></script>
 
   <script src="/_scripts/site-search.js"></script>
@@ -446,7 +460,7 @@
       </span>
     
     
-      <span class="title-text" data-tooltip="Home">
+      <span class="title-text" data-tooltip="Home" data-tooltip-en="Home" data-tooltip-zh="首页">
         
           <span class="title">IMCRL</span>
         
@@ -461,29 +475,38 @@
     
     
       
-        <a href="/research/" data-tooltip="Research directions and publications">
-          Research
+        <a href="/research/" data-tooltip="Research directions" data-tooltip-en="Research directions" data-tooltip-zh="研究方向">
+          <span class="lang-en">Research</span><span class="lang-zh">研究</span>
+
         </a>
       
     
       
-        <a href="/team/" data-tooltip="About our team">
-          Team
+        <a href="/team/" data-tooltip="About our team" data-tooltip-en="About our team" data-tooltip-zh="团队介绍">
+          <span class="lang-en">Team</span><span class="lang-zh">团队</span>
+
         </a>
       
     
       
-        <a href="/news/" data-tooltip="Lab news and updates">
-          News
+        <a href="/news/" data-tooltip="Lab news and updates" data-tooltip-en="Lab news and updates" data-tooltip-zh="新闻与动态">
+          <span class="lang-en">News</span><span class="lang-zh">新闻</span>
+
         </a>
       
     
       
-        <a href="/contact/" data-tooltip="Email, address, and location">
-          Contact
+        <a href="/contact/" data-tooltip="Email and address" data-tooltip-en="Email and address" data-tooltip-zh="邮箱与地址">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+
         </a>
       
     
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
+      <span class="lang-switch-sep" aria-hidden="true">/</span>
+      <button type="button" data-lang-set="zh" aria-pressed="false">中</button>
+    </div>
   </nav>
 </header>
 
@@ -550,19 +573,31 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
   <div class="card-text">
     
+    
+    
       <a href="https://github.com/" class="card-title">
-        Cool Dataset
-    </a>
+        <span class="lang-en">Cool Dataset</span><span class="lang-zh">Cool Dataset</span>
+
+      </a>
     
 
     
-      <span class="card-subtitle">a subtitle</span>
+    
+    
+      <span class="card-subtitle">
+        <span class="lang-en">a subtitle</span><span class="lang-zh">a subtitle</span>
+
+      </span>
     
 
+    
+    
     
       <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+        <span class="lang-en">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
+        <span class="lang-zh">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
       </p>
     
 
@@ -590,19 +625,31 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
   <div class="card-text">
     
+    
+    
       <a href="https://github.com/" class="card-title">
-        Cool Package
-    </a>
+        <span class="lang-en">Cool Package</span><span class="lang-zh">Cool Package</span>
+
+      </a>
     
 
     
-      <span class="card-subtitle">a subtitle</span>
+    
+    
+      <span class="card-subtitle">
+        <span class="lang-en">a subtitle</span><span class="lang-zh">a subtitle</span>
+
+      </span>
     
 
+    
+    
     
       <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+        <span class="lang-en">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
+        <span class="lang-zh">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
       </p>
     
 
@@ -644,19 +691,31 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
   <div class="card-text">
     
+    
+    
       <a href="https://github.com/" class="card-title">
-        Cool Tutorial
-    </a>
+        <span class="lang-en">Cool Tutorial</span><span class="lang-zh">Cool Tutorial</span>
+
+      </a>
     
 
     
-      <span class="card-subtitle">a subtitle</span>
+    
+    
+      <span class="card-subtitle">
+        <span class="lang-en">a subtitle</span><span class="lang-zh">a subtitle</span>
+
+      </span>
     
 
+    
+    
     
       <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+        <span class="lang-en">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
+        <span class="lang-zh">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
       </p>
     
 
@@ -688,19 +747,31 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
   <div class="card-text">
     
+    
+    
       <a href="https://github.com/" class="card-title">
-        Cool Web App
-    </a>
+        <span class="lang-en">Cool Web App</span><span class="lang-zh">Cool Web App</span>
+
+      </a>
     
 
     
-      <span class="card-subtitle">a subtitle</span>
+    
+    
+      <span class="card-subtitle">
+        <span class="lang-en">a subtitle</span><span class="lang-zh">a subtitle</span>
+
+      </span>
     
 
+    
+    
     
       <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+        <span class="lang-en">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
+        <span class="lang-zh">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
       </p>
     
 
@@ -728,19 +799,31 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
   <div class="card-text">
     
+    
+    
       <a href="https://github.com/" class="card-title">
-        Cool Web Server
-    </a>
+        <span class="lang-en">Cool Web Server</span><span class="lang-zh">Cool Web Server</span>
+
+      </a>
     
 
     
-      <span class="card-subtitle">a subtitle</span>
+    
+    
+      <span class="card-subtitle">
+        <span class="lang-en">a subtitle</span><span class="lang-zh">a subtitle</span>
+
+      </span>
     
 
+    
+    
     
       <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+        <span class="lang-en">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
+        <span class="lang-zh">Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</span>
       </p>
     
 
@@ -796,13 +879,16 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   <div>
     © 2026
     IMCRL
-      |   Built with
+      |  
+    <span class="lang-en">Built with</span><span class="lang-zh">本站使用</span>
+
     <a href="https://github.com/greenelab/lab-website-template">
       Lab Website Template
     </a>
+    <span class="lang-zh"> 构建</span>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" data-tooltip-en="Dark mode" data-tooltip-zh="深色模式" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>

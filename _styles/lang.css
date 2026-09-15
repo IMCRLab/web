@@ -1,0 +1,50 @@
+.lang-zh {
+  display: none !important;
+}
+
+html[data-lang=zh] .lang-zh {
+  display: revert !important;
+}
+
+html[data-lang=zh] .lang-en {
+  display: none !important;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 6px;
+  padding: 5px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.lang-switch button {
+  margin: 0;
+  padding: 2px 4px;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: var(--semi-bold);
+  letter-spacing: 0.04em;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  color: var(--primary);
+  opacity: 1;
+}
+
+.lang-switch button[aria-pressed=true] {
+  color: var(--primary);
+  opacity: 1;
+}
+
+.lang-switch-sep {
+  opacity: 0.35;
+}
+
+/*# sourceMappingURL=lang.css.map */

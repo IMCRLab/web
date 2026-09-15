@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-dark="false">
+<html lang="en" data-dark="false" data-lang="en" data-title-en="Others | IMCRL" data-title-zh="其他 | IMCRL">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script>
+    (function () {
+      var lang = window.localStorage.getItem("imcrl-lang");
+      if (lang !== "zh") lang = "en";
+      document.documentElement.setAttribute("data-lang", lang);
+      document.documentElement.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
+    })();
+  </script>
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -43,22 +51,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>其他 | IMCRL</title>
+<title>Others | IMCRL</title>
 
 <link rel="icon" href="/images/icon.png">
 
-<meta name="title" content="其他">
-<meta name="description" content="智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。">
+<meta name="title" content="Others">
+<meta name="description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
 
-<meta property="og:title" content="其他">
+<meta property="og:title" content="Others">
 <meta property="og:site_title" content="IMCRL">
-<meta property="og:description" content="智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。">
+<meta property="og:description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
 <meta property="og:url" content="http://imcrl.com">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="其他">
-<meta property="twitter:description" content="智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。">
+<meta property="twitter:title" content="Others">
+<meta property="twitter:description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
 <meta property="twitter:url" content="http://imcrl.com">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
@@ -73,9 +81,9 @@
     
       "@type": "WebSite",
     
-    "name": "其他",
-    "description": "智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。",
-    "headline": "其他",
+    "name": "Others",
+    "description": "The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.",
+    "headline": "Others",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -212,6 +220,10 @@
 
   
     <link href="/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/lang.css" rel="stylesheet">
   
 
   
@@ -359,6 +371,8 @@
 
   <script src="/_scripts/fetch-tags.js"></script>
 
+  <script src="/_scripts/lang.js"></script>
+
   <script src="/_scripts/search.js"></script>
 
   <script src="/_scripts/site-search.js"></script>
@@ -446,7 +460,7 @@
       </span>
     
     
-      <span class="title-text" data-tooltip="Home">
+      <span class="title-text" data-tooltip="Home" data-tooltip-en="Home" data-tooltip-zh="首页">
         
           <span class="title">IMCRL</span>
         
@@ -461,29 +475,38 @@
     
     
       
-        <a href="/research/" data-tooltip="Research directions and publications">
-          Research
+        <a href="/research/" data-tooltip="Research directions" data-tooltip-en="Research directions" data-tooltip-zh="研究方向">
+          <span class="lang-en">Research</span><span class="lang-zh">研究</span>
+
         </a>
       
     
       
-        <a href="/team/" data-tooltip="About our team">
-          Team
+        <a href="/team/" data-tooltip="About our team" data-tooltip-en="About our team" data-tooltip-zh="团队介绍">
+          <span class="lang-en">Team</span><span class="lang-zh">团队</span>
+
         </a>
       
     
       
-        <a href="/news/" data-tooltip="Lab news and updates">
-          News
+        <a href="/news/" data-tooltip="Lab news and updates" data-tooltip-en="Lab news and updates" data-tooltip-zh="新闻与动态">
+          <span class="lang-en">News</span><span class="lang-zh">新闻</span>
+
         </a>
       
     
       
-        <a href="/contact/" data-tooltip="Email, address, and location">
-          Contact
+        <a href="/contact/" data-tooltip="Email and address" data-tooltip-en="Email and address" data-tooltip-zh="邮箱与地址">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+
         </a>
       
     
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
+      <span class="lang-switch-sep" aria-hidden="true">/</span>
+      <button type="button" data-lang-set="zh" aria-pressed="false">中</button>
+    </div>
   </nav>
 </header>
 
@@ -505,29 +528,44 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="其他--可穿戴外骨骼">
-<i class="icon fa-solid fa-layer-group"></i>其他 · 可穿戴外骨骼</h1>
+    <h1 id="wearable-exoskeletons可穿戴外骨骼">
+<i class="icon fa-solid fa-layer-group"></i><span class="lang-en">Wearable Exoskeletons</span><span class="lang-zh">可穿戴外骨骼</span>
+</h1>
 
+<div class="lang-en">
+<p>We study lower-limb human–robot rehabilitation systems through an integrated pipeline of musculoskeletal modeling, multimodal motion sensing, personalized assistance generation, and hardware validation. The work covers sit-to-stand rehabilitation after stroke and overground walking for older adults, yielding two distinct exoskeleton solutions.</p>
+</div>
+<div class="lang-zh">
 <p>实验室围绕下肢人机共融康复机器人开展系统性研究，搭建人体生物力学建模 — 多模态运动感知 — 个性化助力生成 — 实体样机验证一体化研发体系，同时覆盖脑卒中坐立康复、老年平地行走两大核心场景，形成两类差异化外骨骼成套技术方案。</p>
+</div>
 
 <figure class="figure">
-  <a class="figure-image" aria-label="下肢外骨骼样机 生物力学仿真与人体实验">
+  <a class="figure-image" aria-label="figure link">
     <img src="/images/research/others.jpg" style="
         width: auto;
         max-height: unset;
-      " alt="下肢外骨骼样机 生物力学仿真与人体实验" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
+  
+  
     <figcaption class="figure-caption">
-      下肢外骨骼样机、生物力学仿真与人体实验
+      <span class="lang-en">Lower-limb exoskeleton prototypes, musculoskeletal simulation, and human experiments</span><span class="lang-zh">下肢外骨骼样机、生物力学仿真与人体实验</span>
 
     </figcaption>
   
 </figure>
 
+<div class="lang-en">
+<p>The team has developed two wearable devices: a unilateral sit-to-stand assistance exoskeleton for hemiparetic patients, and a personalized hip-assistance walking exoskeleton for older adults and load-carrying users. Both prototypes emphasize lightweight wearability and compliant human–robot coordination, and are intended for hospital rehabilitation, home care, and outdoor load carriage.</p>
+
+<p>Key technologies include real-time force and motion sensing at magnetically instrumented joints, and offline simulation for personalized assistance. The devices adapt to each user’s gait and share lower-limb effort. Human comparison studies show reduced joint loading and muscle activation. Related papers have appeared in international robotics journals. The work offers a lightweight, low-cost design and control path for wearable rehabilitation robots, with applications in healthcare and specialized equipment.</p>
+</div>
+<div class="lang-zh">
 <p>团队先后研发两款下肢穿戴设备：一是面向偏瘫患者的单侧坐立辅助外骨骼，二是适配高龄、负重人群的髋关节个性化助行外骨骼，两套样机均兼顾轻量化穿戴与人机柔顺协同，适配医院康复、居家养老、户外负重多元需求。</p>
 
 <p>围绕下肢康复核心痛点，实验室重点突破两类核心技术：磁传感关节实时力位感知、仿真离线个性化助力优化。让外骨骼贴合每个人的行走习惯，自然分担下肢运动负荷，系列人体对照实验表明，两套设备可显著降低受试者关节内力与肌肉激活程度，相关成果已整理成学术论文发表在国际知名机器人期刊，为穿戴式康复机器人提供轻量化、低成本全套设计与控制方案，在民生医疗、特种装备领域具备广阔应用前景。</p>
+</div>
   </section>
 
   
@@ -544,30 +582,34 @@
 <div class="grid" data-style="">
   
 <figure class="figure">
-  <a class="figure-image" aria-label="髋关节个性化助行外骨骼">
+  <a class="figure-image" aria-label="figure link">
     <img src="/images/research/others-device.jpg" style="
         width: auto;
         max-height: unset;
-      " alt="髋关节个性化助行外骨骼" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
+  
+  
     <figcaption class="figure-caption">
-      髋关节个性化助行外骨骼
+      <span class="lang-en">Personalized hip-assistance walking exoskeleton</span><span class="lang-zh">髋关节个性化助行外骨骼</span>
 
     </figcaption>
   
 </figure>
 
 <figure class="figure">
-  <a class="figure-image" aria-label="跑台人体实验">
+  <a class="figure-image" aria-label="figure link">
     <img src="/images/research/others-gait.jpg" style="
         width: auto;
         max-height: unset;
-      " alt="跑台人体实验" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
+  
+  
     <figcaption class="figure-caption">
-      跑台人体实验
+      <span class="lang-en">Treadmill human experiment</span><span class="lang-zh">跑台人体实验</span>
 
     </figcaption>
   
@@ -611,13 +653,16 @@
   <div>
     © 2026
     IMCRL
-      |   Built with
+      |  
+    <span class="lang-en">Built with</span><span class="lang-zh">本站使用</span>
+
     <a href="https://github.com/greenelab/lab-website-template">
       Lab Website Template
     </a>
+    <span class="lang-zh"> 构建</span>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" data-tooltip-en="Dark mode" data-tooltip-zh="深色模式" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>
