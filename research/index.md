@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-实验室面向智能机器人与先进机电系统，设有交互、操作、电磁三个主要方向，并以其他方向承载外骨骼等交叉研究。
+实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。
 
 {% include section.html %}
 

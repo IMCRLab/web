@@ -1,23 +1,23 @@
 - title: 交互
   subtitle: Interaction
-  image: images/photo.jpg
+  image: images/research/interaction.jpg
   link: research/interaction
-  description: 具身智能人机交互。研究人与机器人、机电系统之间自然、高效、可理解的交互方式。
+  description: 具身智能人机交互。构建覆盖感知、认知、生成与执行的一体化框架，实现自然、富有情感的人机交流。
 
 - title: 操作
   subtitle: Manipulation
-  image: images/photo.jpg
+  image: images/research/manipulation-hand.jpg
   link: research/manipulation
-  description: 灵巧操作。面向复杂环境与精细作业，研究机器人操作、运动规划与控制。
+  description: 灵巧操作。推进灵巧手、多模态感知与力触融合模型，服务精细抓取与富接触作业。
 
 - title: 电磁
   subtitle: Electromagnetics
-  image: images/photo.jpg
+  image: images/research/electromagnetics.jpg
   link: research/electromagnetics
-  description: 智能电子感知。围绕电磁检测、传感与信号，服务先进机电系统的感知与测量。
+  description: 智能电磁感知与磁触觉。面向检测、传感与阵列化多维力感知。
 
 - title: 其他
   subtitle: Others
-  image: images/photo.jpg
+  image: images/research/others-device.jpg
   link: research/others
-  description: 高仿生外骨骼等交叉方向，探索人机共融、助力与康复中的机电系统。
+  description: 可穿戴外骨骼。围绕下肢人机共融康复与助行，形成轻量化、个性化助力方案。
