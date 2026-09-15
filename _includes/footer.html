@@ -26,16 +26,20 @@
   <div>
     &copy; {{ site.time | date: "%Y" }}
     {{ site.title }}
-    &nbsp; | &nbsp; Built with
+    &nbsp; | &nbsp;
+    {% include lang.html en="Built with" zh="本站使用" %}
     <a href="https://github.com/greenelab/lab-website-template">
       Lab Website Template
     </a>
+    <span class="lang-zh"> 构建</span>
   </div>
 
   <input
     type="checkbox"
     class="dark-toggle"
     data-tooltip="Dark mode"
+    data-tooltip-en="Dark mode"
+    data-tooltip-zh="深色模式"
     aria-label="toggle dark mode"
     oninput="onDarkToggleChange(event)"
   >

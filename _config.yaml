@@ -1,7 +1,7 @@
 # site properties and page defaults
 title: IMCRL
 subtitle:
-description: 智能机电与控制实验室（IMCRL）隶属于华中科技大学机械科学与工程学院先进电子制造研究中心，由李敏教授领衔。实验室面向智能机器人与先进机电系统，围绕具身智能人机交互、灵巧操作、智能电磁感知、磁触觉和可穿戴外骨骼等方向开展研究。
+description: The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false

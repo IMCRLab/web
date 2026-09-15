@@ -1,35 +1,24 @@
 ---
 title: Team
+title_zh: 团队
 nav:
   order: 2
   tooltip: About our team
+  tooltip_en: About our team
+  tooltip_zh: 团队介绍
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %}{% include lang.html en="Team" zh="团队" %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-{% include section.html %}
-
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
-
-{% include section.html background="images/background.jpg" dark=true %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-{% include section.html %}
-
-{% capture content %}
-
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
+{% capture en %}
+IMCRL is led by Professor Min Li and currently has more than twenty faculty members and students.
 {% endcapture %}
+{% capture zh %}
+实验室由李敏教授领衔，现有师生二十余人。
+{% endcapture %}
+{% include lang-block.html en=en zh=zh %}
 
-{% include grid.html style="square" content=content %}
+{% include section.html %}
+
+{% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
+{% include list.html data="members" component="portrait" filter="role != 'principal-investigator'" %}

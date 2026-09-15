@@ -1,23 +1,35 @@
-- title: 交互
-  subtitle: Interaction
+- title_en: Interaction
+  title_zh: 交互
+  subtitle_en: Embodied Human–Robot Interaction
+  subtitle_zh: 具身智能人机交互
   image: images/research/interaction.jpg
   link: research/interaction
-  description: 具身智能人机交互。构建覆盖感知、认知、生成与执行的一体化框架，实现自然、富有情感的人机交流。
+  description_en: An integrated perception–cognition–generation–execution framework for natural, affective human–robot communication.
+  description_zh: 构建覆盖感知、认知、生成与执行的一体化交互框架，实现自然、富有情感的人机交流。
 
-- title: 操作
-  subtitle: Manipulation
+- title_en: Manipulation
+  title_zh: 操作
+  subtitle_en: Dexterous Manipulation
+  subtitle_zh: 灵巧操作
   image: images/research/manipulation-hand.jpg
   link: research/manipulation
-  description: 灵巧操作。推进灵巧手、多模态感知与力触融合模型，服务精细抓取与富接触作业。
+  description_en: Dexterous hands, multimodal sensing, and visuo-tactile models for fine grasping and contact-rich tasks.
+  description_zh: 推进灵巧手、多模态感知与力触融合模型，服务精细抓取与富接触作业。
 
-- title: 电磁
-  subtitle: Electromagnetics
+- title_en: Electromagnetics
+  title_zh: 电磁
+  subtitle_en: Sensing and Magnetic Touch
+  subtitle_zh: 智能电磁感知与磁触觉
   image: images/research/electromagnetics.jpg
   link: research/electromagnetics
-  description: 智能电磁感知与磁触觉。面向检测、传感与阵列化多维力感知。
+  description_en: Electromagnetic inspection and arrayed magnetic tactile sensing for contact force and industrial measurement.
+  description_zh: 面向检测、传感与阵列化多维力感知。
 
-- title: 其他
-  subtitle: Others
+- title_en: Others
+  title_zh: 其他
+  subtitle_en: Wearable Exoskeletons
+  subtitle_zh: 可穿戴外骨骼
   image: images/research/others-device.jpg
   link: research/others
-  description: 可穿戴外骨骼。围绕下肢人机共融康复与助行，形成轻量化、个性化助力方案。
+  description_en: Lower-limb rehabilitation and walking assistance with lightweight, personalized exoskeleton systems.
+  description_zh: 围绕下肢人机共融康复与助行，形成轻量化、个性化助力方案。

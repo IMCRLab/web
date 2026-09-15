@@ -1,77 +1,40 @@
 ---
 title: Contact
+title_zh: 联系
 nav:
   order: 4
-  tooltip: Email, address, and location
+  tooltip: Email and address
+  tooltip_en: Email and address
+  tooltip_zh: 邮箱与地址
 ---
 
-# {% include icon.html icon="fa-regular fa-envelope" %}Contact
+# {% include icon.html icon="fa-regular fa-envelope" %}{% include lang.html en="Contact" zh="联系" %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+{% capture en %}
+For research collaboration and student inquiries, please contact Professor Min Li.
+{% endcapture %}
+{% capture zh %}
+科研合作与招生咨询，请联系李敏教授。
+{% endcapture %}
+{% include lang-block.html en=en zh=zh %}
 
 {%
   include button.html
   type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
-%}
-{%
-  include button.html
-  type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
-%}
-{%
-  include button.html
-  type="address"
-  tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
+  text="min.li@hust.edu.cn"
+  link="min.li@hust.edu.cn"
 %}
 
 {% include section.html %}
 
-{% capture col1 %}
-
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-
+{% capture en %}
+School of Mechanical Science and Engineering  
+Huazhong University of Science and Technology  
+Wuhan, China
 {% endcapture %}
-
-{% capture col2 %}
-
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-
+{% capture zh %}
+华中科技大学机械科学与工程学院  
+先进电子制造研究中心  
+中国武汉
 {% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 %}
-
-{% include section.html dark=true %}
-
-{% capture col1 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col2 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col3 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}
+{% include lang-block.html en=en zh=zh %}

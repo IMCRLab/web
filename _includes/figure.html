@@ -17,9 +17,11 @@
       {% include fallback.html %}
     >
   </a>
-  {% if include.caption %}
+  {% assign caption_en = include.caption_en | default: include.caption %}
+  {% assign caption_zh = include.caption_zh | default: include.caption_en | default: include.caption %}
+  {% if caption_en %}
     <figcaption class="figure-caption">
-      {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+      {% include lang.html en=caption_en zh=caption_zh %}
     </figcaption>
   {% endif %}
 </figure>

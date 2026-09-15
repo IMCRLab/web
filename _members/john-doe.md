@@ -7,4 +7,10 @@ links:
   github: john-doe
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{% capture en %}
+Profile coming soon.
+{% endcapture %}
+{% capture zh %}
+简介将稍后更新。
+{% endcapture %}
+{% include lang-block.html en=en zh=zh %}

@@ -34,7 +34,7 @@ layout: default
 
 <p class="center">
   <a href="{{ search | relative_url | uri_escape }}">
-    Search for {{ page.name | default: page.title }}'s papers on the Research page
+    {% include lang.html en="Search for " zh="在研究页面检索 " %}{{ page.name | default: page.title }}{% include lang.html en="'s papers on the Research page" zh=" 的论文" %}
   </a>
 </p>
 

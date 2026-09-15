@@ -27,7 +27,12 @@
       </span>
     {% endif %}
     {% if site.logo-text != false %}
-      <span class="title-text" data-tooltip="Home">
+      <span
+        class="title-text"
+        data-tooltip="Home"
+        data-tooltip-en="Home"
+        data-tooltip-zh="首页"
+      >
         {% if site.title and site.show-title != false %}
           <span class="title">{{ site.title }}</span>
         {% endif %}
@@ -49,11 +54,18 @@
       {% if page.nav %}
         <a
           href="{{ page.dir | relative_url | uri_escape }}"
-          data-tooltip="{{ page.nav.tooltip | xml_escape }}"
+          data-tooltip="{{ page.nav.tooltip_en | default: page.nav.tooltip | xml_escape }}"
+          data-tooltip-en="{{ page.nav.tooltip_en | default: page.nav.tooltip | xml_escape }}"
+          data-tooltip-zh="{{ page.nav.tooltip_zh | default: page.nav.tooltip_en | default: page.nav.tooltip | xml_escape }}"
         >
-          {{ page.title }}
+          {% include lang.html en=page.title zh=page.title_zh %}
         </a>
       {% endif %}
     {% endfor %}
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
+      <span class="lang-switch-sep" aria-hidden="true">/</span>
+      <button type="button" data-lang-set="zh" aria-pressed="false">中</button>
+    </div>
   </nav>
 </header>

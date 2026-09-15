@@ -1,5 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-dark="false">
+{% if page.title %}
+  {% assign tab_en = page.title | append: " | " | append: site.title %}
+  {% assign tab_zh = page.title_zh | default: page.title | append: " | " | append: site.title %}
+{% else %}
+  {% assign tab_en = site.title %}
+  {% assign tab_zh = site.title %}
+{% endif %}
+<html
+  lang="en"
+  data-dark="false"
+  data-lang="en"
+  data-title-en="{{ tab_en | xml_escape }}"
+  data-title-zh="{{ tab_zh | xml_escape }}"
+>
   {% include head.html %}
   <body>
     {% include header.html %}

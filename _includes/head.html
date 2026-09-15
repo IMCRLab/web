@@ -1,4 +1,12 @@
 <head>
+  <script>
+    (function () {
+      var lang = window.localStorage.getItem("imcrl-lang");
+      if (lang !== "zh") lang = "en";
+      document.documentElement.setAttribute("data-lang", lang);
+      document.documentElement.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
+    })();
+  </script>
   {% include analytics.html %}
   {% include verification.html %}
   {% include meta.html %}

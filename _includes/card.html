@@ -16,7 +16,9 @@
   </a>
 
   <div class="card-text">
-    {% if include.title %}
+    {% assign card_title_en = include.title_en | default: include.title %}
+    {% assign card_title_zh = include.title_zh | default: include.title_en | default: include.title %}
+    {% if card_title_en %}
       <a
         {% if include.link %}
           href="{{ include.link | relative_url | uri_escape }}"
@@ -26,17 +28,24 @@
         {% endif %}
         class="card-title"
       >
-        {{ include.title }}
-    </a>
+        {% include lang.html en=card_title_en zh=card_title_zh %}
+      </a>
     {% endif %}
 
-    {% if include.subtitle %}
-      <span class="card-subtitle">{{ include.subtitle }}</span>
+    {% assign card_sub_en = include.subtitle_en | default: include.subtitle %}
+    {% assign card_sub_zh = include.subtitle_zh | default: include.subtitle_en | default: include.subtitle %}
+    {% if card_sub_en %}
+      <span class="card-subtitle">
+        {% include lang.html en=card_sub_en zh=card_sub_zh %}
+      </span>
     {% endif %}
 
-    {% if include.description %}
+    {% assign card_desc_en = include.description_en | default: include.description %}
+    {% assign card_desc_zh = include.description_zh | default: include.description_en | default: include.description %}
+    {% if card_desc_en %}
       <p>
-        {{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}
+        <span class="lang-en">{{ card_desc_en | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+        <span class="lang-zh">{{ card_desc_zh | markdownify | remove: "<p>" | remove: "</p>" }}</span>
       </p>
     {% endif %}
 

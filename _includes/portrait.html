@@ -36,9 +36,11 @@
       </span>
     {% endif %}
 
-    {% if member.description or type %}
+    {% assign role_en = member.description_en | default: member.description | default: type.description %}
+    {% assign role_zh = member.description_zh | default: type.description_zh | default: member.description | default: type.description %}
+    {% if role_en or type %}
       <span class="portrait-description">
-        {{ member.description | default: type.description }}
+        {% include lang.html en=role_en zh=role_zh %}
       </span>
     {% endif %}
 
