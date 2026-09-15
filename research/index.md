@@ -7,21 +7,10 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+实验室面向智能机器人与先进机电系统，设有交互、操作、电磁三个主要方向，并以其他方向承载外骨骼等交叉研究。
 
 {% include section.html %}
 
-## Highlighted
+## Directions
 
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
-
-{% include section.html %}
-
-## All
-
-{% include search-box.html %}
-
-{% include search-info.html %}
-
-{% include list.html data="citations" component="citation" style="rich" %}
+{% include list.html data="directions" component="card" %}
