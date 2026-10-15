@@ -16,33 +16,63 @@ button {
   gap: 10px;
   max-width: calc(100% - 5px - 5px);
   margin: 5px;
-  padding: 8px 15px;
-  border: none;
-  border-radius: var(--rounded);
+  padding: 11px 22px;
+  border: 1px solid transparent;
+  border-radius: 999px;
   background: var(--primary);
-  color: var(--background);
+  color: #ffffff;
   text-align: center;
   font: inherit;
   font-family: var(--heading);
-  font-weight: var(--semi-bold);
+  font-size: 0.95rem;
+  font-weight: var(--bold);
   text-decoration: none;
   vertical-align: middle;
   appearance: none;
-  transition: background var(--transition), color var(--transition);
+  transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+[data-dark="true"] .button:not([data-style]) {
+  color: var(--navy);
 }
 
 .button:hover {
-  background: var(--text);
-  color: var(--background);
+  background: var(--secondary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.button .icon {
+  transition: transform var(--transition);
+}
+
+.button[data-flip]:hover .icon {
+  transform: translateX(3px);
 }
 
 .button[data-style="bare"] {
   padding: 5px;
+  border: none;
   background: none;
   color: var(--primary);
 
   &:hover {
     color: var(--text);
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+.button[data-style="outline"] {
+  border-color: currentColor;
+  background: transparent;
+  color: var(--text);
+
+  &:hover {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #ffffff;
   }
 }
 

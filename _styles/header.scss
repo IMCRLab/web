@@ -1,26 +1,22 @@
 ---
 ---
 
-$logo-big: 80px;
-$logo: 40px;
-$big-padding: 100px;
-$collapse: 700px;
-$sticky: true;
+$collapse: 900px;
 
 header {
+  position: sticky !important;
+  top: 0;
+  z-index: 20 !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  box-shadow: var(--shadow);
-
-  @if $sticky {
-    position: sticky !important;
-    top: 0;
-    z-index: 10 !important;
-  }
+  gap: 28px;
+  min-height: var(--header-height);
+  padding: 10px max(24px, calc((100% - var(--page)) / 2));
+  background: rgba(7, 21, 34, 0.94) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: saturate(160%) blur(14px);
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
 header a {
@@ -32,50 +28,69 @@ header a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
+  gap: 12px;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .logo {
-  height: $logo;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 7px 6px 5px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: var(--navy);
+  flex-shrink: 0;
 }
 
 .logo > * {
-  width: unset;
+  width: 100%;
   height: 100%;
 }
 
 .title-text {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
   min-width: 0;
   font-family: var(--title);
   text-align: left;
+  line-height: 1.15;
 }
 
 .title {
-  font-size: var(--large);
+  font-size: 1.15rem;
+  font-weight: var(--heavy);
+  letter-spacing: 0.12em;
 }
 
 .subtitle {
-  opacity: 0.65;
-  font-weight: var(--thin);
+  opacity: 0.68;
+  font-size: 0.74rem;
+  font-weight: var(--regular);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .nav-toggle {
   display: none;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
   margin: 0;
+  border-radius: 10px;
   color: var(--text);
   appearance: none;
+  cursor: pointer;
   transition: background var(--transition);
+}
+
+.nav-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .nav-toggle:after {
@@ -84,7 +99,7 @@ header a {
   left: 50%;
   top: 50%;
   color: var(--text);
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   transform: translate(-50%, -50%);
@@ -96,73 +111,112 @@ header a {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-grow: 1;
+  gap: 4px;
   font-family: var(--heading);
-  text-transform: uppercase;
 }
 
 nav > a {
-  padding: 5px;
+  position: relative;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: var(--semi-bold);
+  letter-spacing: 0.04em;
+  opacity: 0.82;
+  transition: opacity var(--transition), background var(--transition);
 }
 
-nav > a:hover {
-  color: var(--primary);
+nav > a::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 2px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform var(--transition);
 }
 
-header:not([data-big]) {
-  @media (max-width: $collapse) {
-    justify-content: flex-end;
-
-    .nav-toggle {
-      display: flex;
-    }
-
-    .nav-toggle:not(:checked) + nav {
-      display: none;
-    }
-
-    nav {
-      align-items: flex-end;
-      flex-direction: column;
-      width: 100%;
-    }
-  }
+nav > a:hover,
+nav > a[aria-current="page"] {
+  opacity: 1;
 }
 
+nav > a:hover::after,
+nav > a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+// on the home page the bar floats over the hero until the user scrolls
 header[data-big] {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: $big-padding 20px;
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  background: transparent !important;
+  border-bottom-color: transparent;
+  backdrop-filter: none;
+}
 
-  @if $sticky {
-    top: unset;
+header[data-big][data-scrolled] {
+  background: rgba(7, 21, 34, 0.94) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: saturate(160%) blur(14px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: $collapse) {
+  header {
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .home {
+    flex-grow: 1;
+  }
+
+  .nav-toggle {
+    display: flex;
+    order: 3;
+  }
+
+  .lang-switch {
+    order: 2;
+  }
+
+  nav {
+    order: 4;
     flex-direction: column;
-    flex-grow: 0;
+    align-items: stretch;
+    width: 100%;
+    padding: 6px 0 10px;
   }
 
-  .logo {
-    height: $logo-big;
-    flex-shrink: 0;
+  nav > a {
+    padding: 12px 10px;
   }
 
-  .title-text {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  nav > a::after {
+    left: 10px;
+    right: auto;
+    width: 24px;
   }
 
-  .title {
-    font-size: var(--xxl);
+  .nav-toggle:not(:checked) ~ nav {
+    display: none;
   }
 
+  header[data-big]:has(.nav-toggle:checked) {
+    background: rgba(7, 21, 34, 0.97) !important;
+  }
+}
+
+@media (max-width: 480px) {
   .subtitle {
-    font-size: var(--large);
+    display: none;
   }
 }

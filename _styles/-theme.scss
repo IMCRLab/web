@@ -3,52 +3,68 @@
 
 // colors
 [data-dark="false"] {
-  --primary: #0795d9;
-  --secondary: #7dd3fc;
-  --text: #000000;
+  --primary: #0b84c6;
+  --secondary: #075985;
+  --accent: #38bdf8;
+  --text: #0f1f2b;
   --background: #ffffff;
-  --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
-  --gray: #808080;
-  --dark-gray: #404040;
-  --overlay: #00000020;
+  --background-alt: #f3f7fa;
+  --surface: #ffffff;
+  --line: #dde7ee;
+  --light-gray: #dde7ee;
+  --gray: #5a6d7c;
+  --dark-gray: #2a3f50;
+  --overlay: #0c22300f;
 }
 [data-dark="true"] {
-  --primary: #0795d9;
-  --secondary: #075985;
-  --text: #ffffff;
-  --background: #181818;
-  --background-alt: #1c1c1c;
-  --light-gray: #404040;
-  --gray: #808080;
-  --dark-gray: #b0b0b0;
-  --overlay: #ffffff10;
+  --primary: #38bdf8;
+  --secondary: #7dd3fc;
+  --accent: #38bdf8;
+  --text: #e8f1f6;
+  --background: #0b141c;
+  --background-alt: #101b25;
+  --surface: #15222d;
+  --line: #24384a;
+  --light-gray: #24384a;
+  --gray: #94a9b9;
+  --dark-gray: #c5d5e0;
+  --overlay: #ffffff12;
 }
 
 :root {
+  // brand surfaces shared by both modes
+  --navy: #071522;
+  --navy-2: #0c2236;
+
   // font families
-  --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
-  --code: "Roboto Mono", monospace;
+  --title: "IBM Plex Sans", PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+  --heading: "IBM Plex Sans", PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+  --body: "IBM Plex Sans", PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+  --code: "IBM Plex Mono", monospace;
 
   // font sizes
-  --large: 1.2rem;
+  --large: 1.15rem;
   --xl: 1.4rem;
-  --xxl: 1.6rem;
+  --xxl: 1.8rem;
 
   // font weights
-  --thin: 200;
+  --thin: 300;
   --regular: 400;
   --semi-bold: 500;
   --bold: 600;
+  --heavy: 700;
 
   // text line spacing
-  --spacing: 2;
+  --spacing: 1.8;
   --compact: 1.5;
 
+  // layout
+  --page: 1180px;
+  --header-height: 68px;
+
   // effects
-  --rounded: 3px;
-  --shadow: 0 0 10px 0 var(--overlay);
-  --transition: 0.2s ease;
+  --rounded: 14px;
+  --shadow: 0 10px 30px rgba(12, 32, 48, 0.08);
+  --shadow-hover: 0 18px 44px rgba(11, 132, 198, 0.18);
+  --transition: 0.22s ease;
 }

@@ -30,7 +30,7 @@
     {% endif %}
 
     <div class="post-excerpt-text">
-      <a href="{{ url }}">{{ title }}</a>
+      <a href="{{ url }}">{% include lang.html en=title zh=post.title_zh %}</a>
 
       {%
         include post-info.html
@@ -53,7 +53,11 @@
         | regex_strip
       %}
       <p data-search="{{ search }}">
-        {{ excerpt }}
+        {% if post.description_en %}
+          {% include lang.html en=post.description_en zh=post.description_zh %}
+        {% else %}
+          {{ excerpt }}
+        {% endif %}
       </p>
     </div>
   </div>
