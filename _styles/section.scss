@@ -1,15 +1,16 @@
 ---
 ---
 
-$padding: 80px;
+$page: 1000px;
+$padding: 40px;
 
 section {
-  padding: $padding max(24px, calc((100% - var(--page)) / 2));
+  padding: $padding max($padding, calc((100% - $page) / 2));
   transition: background var(--transition), color var(--transition);
 }
 
 section[data-size="wide"] {
-  padding: $padding 24px;
+  padding: $padding;
 }
 
 section[data-size="full"] {
@@ -35,60 +36,4 @@ main > section:nth-of-type(odd) {
 
 main > section:nth-of-type(even) {
   background: var(--background-alt);
-}
-
-// inner pages: the opening section becomes a page banner
-main > section:first-of-type:has(> h1:first-child) {
-  --text: #f2f8fb;
-  --gray: #a9bccb;
-  --dark-gray: #d5e2eb;
-  --primary: #7dd3fc;
-  position: relative;
-  overflow: hidden;
-  padding-top: 72px;
-  padding-bottom: 64px;
-  background:
-    radial-gradient(circle at 85% 20%, rgba(56, 189, 248, 0.22), transparent 42%),
-    linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
-  color: var(--text);
-}
-
-main > section:first-of-type:has(> h1:first-child)::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: linear-gradient(90deg, transparent 0%, #000 60%);
-}
-
-main > section:first-of-type:has(> h1:first-child) h1 {
-  margin-bottom: 12px;
-}
-
-main > section:first-of-type:has(> h1:first-child) p {
-  max-width: 70ch;
-  color: var(--dark-gray);
-  font-size: 1.05rem;
-}
-
-body[data-layout="post"] main > section:not(:first-of-type) {
-  padding-left: max(24px, calc((100% - 820px) / 2));
-  padding-right: max(24px, calc((100% - 820px) / 2));
-}
-
-body[data-layout="post"] main > section:first-of-type:has(> h1:first-child) h1 {
-  text-align: center;
-}
-
-main > section:first-of-type:has(> h1:first-child) .button:not([data-style]) {
-  color: var(--navy);
-}
-
-main > section:first-of-type:has(> h1:first-child) + section {
-  padding-top: 64px;
 }

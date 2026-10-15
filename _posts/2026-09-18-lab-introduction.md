@@ -65,4 +65,4 @@ We develop arrayed magnetic tactile sensing for dexterous hands, biomimetic fing
 {% capture research_text %}{% include lang.html en="Explore our research" zh="了解研究方向" %}{% endcapture %}
 {% capture wechat_text %}{% include lang.html en="Read on WeChat" zh="阅读公众号原文" %}{% endcapture %}
 {% include button.html link="research" text=research_text icon="fa-solid fa-arrow-right" flip=true %}
-{% include button.html link="https://mp.weixin.qq.com/s/qC4LsFmPwYjeHGmSU2dTtA" text=wechat_text icon="fa-brands fa-weixin" style="outline" %}
+{% include button.html link="https://mp.weixin.qq.com/s/qC4LsFmPwYjeHGmSU2dTtA" text=wechat_text icon="fa-brands fa-weixin" %}
