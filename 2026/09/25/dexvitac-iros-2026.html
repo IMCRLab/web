@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false" data-lang="en" data-title-en="IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation | IMCRL" data-title-zh="IROS 2026｜DexViTac：面向接触密集型灵巧操作的人类多模态示范采集与学习 | IMCRL">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script>
+    (function () {
+      var lang = window.localStorage.getItem("imcrl-lang");
+      if (lang !== "zh") lang = "en";
+      document.documentElement.setAttribute("data-lang", lang);
+      document.documentElement.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
+    })();
+  </script>
+  <style>
+    .lang-zh { display: none !important; }
+    html[data-lang="zh"] .lang-zh { display: revert !important; }
+    html[data-lang="zh"] .lang-en { display: none !important; }
+  </style>
+  <!--
+  put your analytics (e.g. Google Analytics) tracking code here
+-->
+
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation | IMCRL</title>
+
+<link rel="icon" href="/images/icon.png">
+
+<meta name="title" content="IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation">
+<meta name="description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
+
+<meta property="og:title" content="IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation">
+<meta property="og:site_title" content="IMCRL">
+<meta property="og:description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
+<meta property="og:url" content="http://imcrl.com">
+<meta property="og:image" content="/images/share.jpg">
+<meta property="og:locale" content="en_US">
+
+<meta property="twitter:title" content="IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation">
+<meta property="twitter:description" content="The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.">
+<meta property="twitter:url" content="http://imcrl.com">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="/images/share.jpg">
+
+
+  <meta property="og:type" content="website">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "WebSite",
+    
+    "name": "IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation",
+    "description": "The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.",
+    "headline": "IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
+    },
+    "url": "http://imcrl.com"
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="http://imcrl.com/feed.xml">
+
+  <!-- Google Fonts -->
+<!-- automatically get url from fonts used in theme file -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=IBM+Plex%20Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=IBM+Plex%20Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700" rel="stylesheet">
+
+<!-- Font Awesome icons (load asynchronously due to size) -->
+
+<link href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet" media="none" onload="this.removeAttribute('media'); this.onload = null;">
+<noscript>
+  <link href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet">
+</noscript>
+
+  <!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+  
+    <link href="/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/alert.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/all.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/anchor.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/body.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/bold.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/button.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/checkbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/citation.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/code.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/cols.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/dark-toggle.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/details.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/feature.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/figure.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/float.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/font.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/footer.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/form.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/grid.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/header.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/heading.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/home.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/icon.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/lang.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/link.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/list.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/paragraph.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/portrait.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/post-excerpt.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/post-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/post-nav.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/quote.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/rule.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/search-box.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/search-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/section.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/table.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/textbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/tooltip.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/util.css" rel="stylesheet">
+  
+
+
+<!-- include all css in styles folder -->
+
+
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- include all js in scripts folder -->
+
+
+  <script src="/_scripts/anchors.js"></script>
+
+  <script src="/_scripts/dark-mode.js"></script>
+
+  <script src="/_scripts/fetch-tags.js"></script>
+
+  <script src="/_scripts/header.js"></script>
+
+  <script src="/_scripts/lang.js"></script>
+
+  <script src="/_scripts/search.js"></script>
+
+  <script src="/_scripts/site-search.js"></script>
+
+  <script src="/_scripts/table-wrap.js"></script>
+
+  <script src="/_scripts/tooltip.js"></script>
+
+
+</head>
+
+  <body data-layout="post">
+    
+
+
+
+
+
+
+
+<header class="background" style="--image: url('/images/background.jpg')" data-dark="true">
+  <a href="/" class="home">
+    
+      <span class="logo">
+        
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="90 290 550 480" fill="currentColor">
+  <path d="M102 463 L185 312 L205 312 L288 463 L266 463 L195 334 L124 463 Z"></path>
+  <path d="M442 463 L525 312 L545 312 L628 463 L606 463 L535 334 L464 463 Z"></path>
+  <rect x="175" y="512" width="40" height="40"></rect>
+  <rect x="520" y="512" width="40" height="40"></rect>
+  <path d="M207 676 Q367 758 528 676 L528 700 Q367 796 207 700 Z"></path>
+</svg>
+
+        
+      </span>
+    
+    
+      <span class="title-text" data-tooltip="Home" data-tooltip-en="Home" data-tooltip-zh="首页">
+        
+          <span class="title">IMCRL</span>
+        
+        <span class="subtitle">
+          <span class="lang-en">Intelligent Mechatronics &amp; Control Lab</span><span class="lang-zh">智能机电与控制实验室</span>
+
+        </span>
+      </span>
+    
+  </a>
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    
+    
+    
+      
+        <a href="/research/" data-tooltip="Research directions" data-tooltip-en="Research directions" data-tooltip-zh="研究方向">
+          <span class="lang-en">Research</span><span class="lang-zh">研究</span>
+
+        </a>
+      
+    
+      
+        <a href="/team/" data-tooltip="About our team" data-tooltip-en="About our team" data-tooltip-zh="团队介绍">
+          <span class="lang-en">Team</span><span class="lang-zh">团队</span>
+
+        </a>
+      
+    
+      
+        <a href="/news/" data-tooltip="Lab news and updates" data-tooltip-en="Lab news and updates" data-tooltip-zh="新闻与动态">
+          <span class="lang-en">News</span><span class="lang-zh">新闻</span>
+
+        </a>
+      
+    
+      
+        <a href="/contact/" data-tooltip="Email and address" data-tooltip-en="Email and address" data-tooltip-zh="邮箱与地址">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+
+        </a>
+      
+    
+  </nav>
+
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang-set="zh" aria-pressed="false">中</button>
+  </div>
+</header>
+
+    <main>
+      <!--
+  modify main content of page:
+  - add section breaks
+  - attach section properties
+  - filter out blank sections
+-->
+
+
+
+
+
+
+  
+  
+  
+
+  <section class="background" data-size="1" style="--image: url('/images/news/2026-09-25-dexvitac-cover.jpg')">
+    <!--
+  <background>images/news/2026-09-25-dexvitac-cover.jpg</background>
+  <dark></dark>
+  <size>1</size>
+-->
+
+
+<h1 class="center">
+<span class="lang-en">IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation</span><span class="lang-zh">IROS 2026｜DexViTac：面向接触密集型灵巧操作的人类多模态示范采集与学习</span>
+</h1>
+
+<div class="post-info">
+  
+
+  
+  
+
+  
+    <span data-tooltip="Originally published on">
+      <i class="icon fa-regular fa-calendar"></i>
+      <span>September 25, 2026</span>
+    </span>
+  
+
+  
+</div>
+
+
+  
+
+
+  <div class="tags">
+    
+      <a href="/blog?search=%22tag:%20paper%22" class="tag" data-tooltip='Show items with the tag "paper"'>
+        paper
+      </a>
+    
+      <a href="/blog?search=%22tag:%20dexterous-manipulation%22" class="tag" data-tooltip='Show items with the tag "dexterous-manipulation"'>
+        dexterous-manipulation
+      </a>
+    
+  </div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+
+
+<div class="lang-en">
+<p>Everyday dexterous manipulation depends not only on motion trajectories but also on tactile cues such as contact location and pressure changes. Professor Min Li’s team presents <strong>DexViTac</strong>, a framework that collects multimodal demonstrations from natural human manipulation and learns contact-rich robot policies from them.</p>
+
+<p>The paper, <em>DexViTac: Collecting Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation</em>, is published at IROS 2026. Authors: Xitong Chen, Yifeng Pan, Min Li, and Xiaotian Ding (corresponding author: Min Li).</p>
+</div>
+<div class="lang-zh">
+<p>日常灵巧操作中，机器人不仅要看运动轨迹，更依赖接触位置、压力变化等触觉信息。李敏教授团队提出面向接触密集型灵巧操作的多模态示范采集与学习框架 <strong>DexViTac</strong>，以人类自然操作为数据来源，将便携式采集系统、多模态时空对齐、触觉表征学习与机器人策略训练相结合。</p>
+
+<p>相关成果以《DexViTac: Collecting Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation》为题发表于 IROS 2026，作者为 Xitong Chen、Yifeng Pan、Min Li 和 Xiaotian Ding，通讯作者为 Min Li。</p>
+</div>
+
+<div class="button-wrapper">
+    <a class="button" href="https://xitong-c.github.io/DexViTac/" data-style="" aria-label="fa-solid fa-globe">
+      <i class="icon fa-solid fa-globe"></i>
+      
+        <span><span class="lang-en">Project page</span><span class="lang-zh">项目主页</span>
+</span>
+      
+    </a>
+  </div>
+
+<div class="button-wrapper">
+    <a class="button" href="https://mp.weixin.qq.com/s/5L1n7e69Y3P1iwUITiX5xA" data-style="outline" aria-label="fa-brands fa-weixin">
+      <i class="icon fa-brands fa-weixin"></i>
+      
+        <span><span class="lang-en">Read on WeChat</span><span class="lang-zh">阅读公众号原文</span>
+</span>
+      
+    </a>
+  </div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<div class="lang-en">
+<h2 id="tactile-centric-wearable-hardware">Tactile-centric wearable hardware</h2>
+
+<p>The mirrored human–robot interface follows three principles: tactile-centric, human-like dexterity, and embodiment-agnostic. It combines high-density HIT LongLin-96 fingertip sensors (8×16 taxels, 0–20 N, 0.01 N sensitivity, 1000 Hz) on a motion-capture glove, IMU-based Manus Quantum Metagloves for hand kinematics, a GoPro Hero 12 with a 177° fisheye lens, and a RealSense T265 for 6-DoF pose. The same tactile sensors are mounted on the robot hand, closing the human–robot sensing gap at the hardware level.</p>
+</div>
+<div class="lang-zh">
+<h2 id="以触觉为中心的可穿戴硬件">以触觉为中心的可穿戴硬件</h2>
+
+<p>人—机对称的示教接口遵循三条原则：以触觉为中心、类人灵巧性、具身无关性。系统集成高密度 HIT LongLin-96 指尖触觉传感器（8×16 阵列、0–20 N 量程、0.01 N 灵敏度、1000 Hz 采样）、带 IMU 的 Manus Quantum Metagloves 动捕手套、GoPro Hero 12 + 177° 鱼眼镜头，以及 RealSense T265 六自由度位姿跟踪。机器人末端安装同款触觉传感器，从硬件层面消除人机感知差距。</p>
+</div>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/images/news/2026-09-25-dexvitac-system.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+  
+  
+    <figcaption class="figure-caption">
+      <span class="lang-en">In-the-wild collection, the human demonstration interface, and the mirrored robot setup</span><span class="lang-zh">野外数据采集、人类示教接口与人机对称的机器人平台</span>
+
+    </figcaption>
+  
+</figure>
+
+<div class="lang-en">
+<h2 id="tactile-anchored-synchronization">Tactile-anchored synchronization</h2>
+
+<p>Tactile and vision streams run at 60 Hz, kinematics at 120 Hz, and pose at 200 Hz. Built on ROS2, the system buffers in hardware and aligns in software, using tactile timestamps as the global anchor so that contact and release events keep their causal order.</p>
+</div>
+<div class="lang-zh">
+<h2 id="触觉主导的多模态时间同步">触觉主导的多模态时间同步</h2>
+
+<p>触觉/视觉 60 Hz、运动学 120 Hz、位姿 200 Hz。系统基于 ROS2，采用“硬件缓冲 + 软件对齐”两阶段机制，以触觉时间戳为全局锚点，保证接触与释放等事件的因果完整性。</p>
+</div>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/images/news/2026-09-25-dexvitac-sync.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+  
+  
+    <figcaption class="figure-caption">
+      <span class="lang-en">Online data collection and tactile-anchored multimodal synchronization</span><span class="lang-zh">在线数据采集与以触觉为锚点的多模态同步</span>
+
+    </figcaption>
+  
+</figure>
+
+<div class="lang-en">
+<h2 id="kinematics-grounded-two-stage-learning">Kinematics-grounded two-stage learning</h2>
+
+<p>After hand and arm retargeting and tactile denoising, stage one pretrains a kinematics-grounded tactile encoder against a frozen ViT-B/16 visual encoder with an InfoNCE contrastive loss, aligning vision and touch and predicting tactile evolution. Stage two plugs the pretrained encoder into ACT to generate action chunks, reducing control latency and jitter.</p>
+</div>
+<div class="lang-zh">
+<h2 id="基于运动学约束的两阶段学习">基于运动学约束的两阶段学习</h2>
+
+<p>经过手部/机械臂重定向与触觉去噪后，阶段一以冻结的 ViT-B/16 视觉编码器为语义锚点，通过运动学条件编码器融合触觉与手部姿态，并用 InfoNCE 对比损失实现视觉—触觉语义对齐与触觉演化预测；阶段二将预训练编码器接入 ACT，一次性生成动作块，缓解控制延迟与抖动。</p>
+</div>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/images/news/2026-09-25-dexvitac-learning.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+  
+  
+    <figcaption class="figure-caption">
+      <span class="lang-en">Stage 1: tactile representation pretraining; Stage 2: policy learning with ACT</span><span class="lang-zh">阶段一：触觉表征预训练；阶段二：基于 ACT 的策略学习</span>
+
+    </figcaption>
+  
+</figure>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<div class="lang-en">
+<h2 id="results">Results</h2>
+
+<p>Experiments use a RealMan RM-65 arm with an Inspire RH56DFTP five-finger hand. The dataset spans more than 10 real-world environments, 40+ tasks, and 2,400+ demonstrations.</p>
+
+<ul>
+  <li>
+<strong>Policy success:</strong> across pipetting, board erasing, marker insertion, and fruit collection, the full model averages <strong>85.8%</strong>, versus 17.5% for the vision-only baseline (only 6.7% on pipetting).</li>
+  <li>
+<strong>Collection efficiency:</strong> 14.5 s per demonstration on average, over <strong>248 demonstrations per hour</strong> — far above teleoperation (84/h) and close to bare human hands (275/h).</li>
+  <li>
+<strong>Tracking robustness:</strong> compared with the vision-based RTMPose under hand–object occlusion, the glove-based capture gives smooth, physically consistent trajectories without jitter or penetration.</li>
+</ul>
+
+<p>Next, the team plans bimanual and mobile versions toward whole-body dexterous manipulation in the wild, and will open-source the hardware design, dataset, and code.</p>
+</div>
+<div class="lang-zh">
+<h2 id="实验结果">实验结果</h2>
+
+<p>实验平台为 RealMan RM-65 机械臂 + Inspire RH56DFTP 五指灵巧手，数据集覆盖 10 余种真实环境、40 余项任务、2400 余条示教。</p>
+
+<ul>
+  <li>
+<strong>策略成功率：</strong> 在移液、白板擦除、记号笔插入、水果收集四项任务上，完整模型平均成功率 <strong>85.8%</strong>，纯视觉基线仅 17.5%（移液仅 6.7%）。</li>
+  <li>
+<strong>采集效率：</strong> 平均每条示教 14.5 秒，每小时超过 <strong>248 条</strong>，远高于传统遥操作的 84 条，接近自然人手的 275 条。</li>
+  <li>
+<strong>跟踪鲁棒性：</strong> 在手—物遮挡场景下，相比视觉跟踪算法 RTMPose，物理动捕手套输出平滑、连续、符合物理约束的轨迹。</li>
+</ul>
+
+<p>未来团队将拓展双臂架构与移动平台，面向真实环境中的全身级灵巧操作，并开源完整硬件设计、大规模数据集与代码。</p>
+</div>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/images/news/2026-09-25-dexvitac-results.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+  
+  
+    <figcaption class="figure-caption">
+      <span class="lang-en">Success rates (%) of different policies, 30 trials per task</span><span class="lang-zh">不同策略的成功率（%），每项任务 30 次试验</span>
+
+    </figcaption>
+  
+</figure>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+
+<div class="post-nav">
+  <span>
+    
+      <i class="icon fa-solid fa-angle-left"></i> Previous post<br>
+      <a href="/2026/09/18/lab-introduction.html">
+        Introducing IMCRL
+      </a>
+    
+  </span>
+  <span>
+    
+  </span>
+</div>
+  </section>
+
+
+    </main>
+    
+
+
+<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="home">
+        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewbox="90 290 550 480" fill="currentColor">
+  <path d="M102 463 L185 312 L205 312 L288 463 L266 463 L195 334 L124 463 Z"></path>
+  <path d="M442 463 L525 312 L545 312 L628 463 L606 463 L535 334 L464 463 Z"></path>
+  <rect x="175" y="512" width="40" height="40"></rect>
+  <rect x="520" y="512" width="40" height="40"></rect>
+  <path d="M207 676 Q367 758 528 676 L528 700 Q367 796 207 700 Z"></path>
+</svg>
+</span>
+        <span class="title-text">
+          <span class="title">IMCRL</span>
+          <span class="subtitle">
+            <span class="lang-en">Intelligent Mechatronics &amp; Control Lab</span><span class="lang-zh">智能机电与控制实验室</span>
+
+          </span>
+        </span>
+      </a>
+      <p>
+        <span class="lang-en">Intelligent robots and advanced mechatronic systems, from embodied interaction to dexterous manipulation.</span><span class="lang-zh">面向智能机器人与先进机电系统，从具身交互到灵巧操作。</span>
+
+      </p>
+      <a class="footer-affiliation" href="https://www.hust.edu.cn/">
+        <img src="/images/hust-logo.png" alt="Huazhong University of Science and Technology">
+        <span><span class="lang-en">Huazhong University of Science and Technology</span><span class="lang-zh">华中科技大学</span>
+</span>
+      </a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading"><span class="lang-en">Explore</span><span class="lang-zh">浏览</span>
+</p>
+      
+      
+        <a href="/research/">
+          <span class="lang-en">Research</span><span class="lang-zh">研究</span>
+
+        </a>
+      
+        <a href="/team/">
+          <span class="lang-en">Team</span><span class="lang-zh">团队</span>
+
+        </a>
+      
+        <a href="/news/">
+          <span class="lang-en">News</span><span class="lang-zh">新闻</span>
+
+        </a>
+      
+        <a href="/contact/">
+          <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+
+        </a>
+      
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading"><span class="lang-en">Contact</span><span class="lang-zh">联系</span>
+</p>
+      
+        
+          <a href="mailto:min.li@hust.edu.cn">
+            <i class="icon fa-solid fa-envelope"></i>min.li@hust.edu.cn
+          </a>
+        
+      
+      <span>
+        <i class="icon fa-solid fa-location-dot"></i>
+        <span class="lang-en">School of Mechanical Science and Engineering, HUST, Wuhan, China</span><span class="lang-zh">华中科技大学机械科学与工程学院，中国武汉</span>
+
+      </span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>
+      © 2026 IMCRL · HUST
+       | 
+      <span class="lang-en">Built with</span><span class="lang-zh">本站使用</span>
+
+      <a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a><span class="lang-zh"> 构建</span>
+    </span>
+
+    <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" data-tooltip-en="Dark mode" data-tooltip-zh="深色模式" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  </div>
+</footer>
+
+  </body>
+</html>
