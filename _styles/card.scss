@@ -36,24 +36,35 @@
 }
 
 .card[data-style="contain"] .card-image {
-  display: block;
-  padding: 28px 22px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: var(--background-alt);
 }
 
 .card[data-style="contain"] .card-image img {
   aspect-ratio: auto;
   object-fit: contain;
-  width: 100%;
+  width: auto;
   height: auto;
-  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
   background: transparent;
+  transition: transform var(--transition);
+}
+
+.card[data-style="contain"]:hover .card-image img {
+  transform: scale(1.03);
 }
 
 section:has(> .card[data-style="contain"]) {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
-  align-items: start;
+  align-items: stretch;
 }
 
 section:has(> .card[data-style="contain"]) > :not(.card) {
@@ -69,6 +80,10 @@ section:has(> .card[data-style="contain"]) > .card {
 @media (max-width: 760px) {
   section:has(> .card[data-style="contain"]) {
     grid-template-columns: 1fr;
+  }
+
+  .card[data-style="contain"] .card-image {
+    height: 220px;
   }
 }
 
