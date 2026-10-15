@@ -3,7 +3,7 @@
 
 $logo-big: 80px;
 $logo: 40px;
-$big-padding: 100px;
+$big-padding: 72px;
 $collapse: 700px;
 $sticky: true;
 
@@ -13,8 +13,10 @@ header {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
-  box-shadow: var(--shadow);
+  padding: 16px 28px;
+  background: var(--background);
+  border-bottom: 1px solid var(--light-gray);
+  box-shadow: none;
 
   @if $sticky {
     position: sticky !important;

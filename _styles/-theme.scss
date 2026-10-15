@@ -5,10 +5,10 @@
 [data-dark="false"] {
   --primary: #0795d9;
   --secondary: #7dd3fc;
-  --text: #000000;
+  --text: #1c1c1c;
   --background: #ffffff;
-  --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
+  --background-alt: #f5f6f7;
+  --light-gray: #e6e6e6;
   --gray: #808080;
   --dark-gray: #404040;
   --overlay: #00000020;
@@ -44,11 +44,11 @@
   --bold: 600;
 
   // text line spacing
-  --spacing: 2;
+  --spacing: 1.65;
   --compact: 1.5;
 
   // effects
-  --rounded: 3px;
-  --shadow: 0 0 10px 0 var(--overlay);
+  --rounded: 14px;
+  --shadow: 0 10px 28px var(--overlay);
   --transition: 0.2s ease;
 }
