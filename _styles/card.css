@@ -23,6 +23,13 @@
   width: 100%;
 }
 
+.card[data-style=contain] .card-image img {
+  object-fit: contain;
+  padding: 14px;
+  box-sizing: border-box;
+  background: transparent;
+}
+
 .card-text {
   display: inline-flex;
   justify-content: flex-start;
