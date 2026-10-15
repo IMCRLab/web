@@ -35,7 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 260px;
+  height: 360px;
   padding: 24px;
   box-sizing: border-box;
   background: var(--background-alt);
@@ -78,7 +78,7 @@ section:has(> .card[data-style=contain]) > .card {
     grid-template-columns: 1fr;
   }
   .card[data-style=contain] .card-image {
-    height: 220px;
+    height: 300px;
   }
 }
 .card-text {
