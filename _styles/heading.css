@@ -8,7 +8,7 @@ h6 {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 }
 
 h1 {
@@ -20,10 +20,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6rem;
-  padding-bottom: 5px;
-  border-bottom: solid 1px var(--light-gray);
-  font-weight: var(--regular);
+  font-size: 1.7rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  font-weight: var(--semi-bold);
 }
 
 h3 {
