@@ -17,9 +17,4 @@
   z-index: -1;
 }
 
-header.background::before,
-footer.background::before {
-  display: none;
-}
-
 /*# sourceMappingURL=background.css.map */

@@ -5,9 +5,8 @@
 .citation {
   display: flex;
   margin: 20px 0;
-  border: 1px solid var(--line);
   border-radius: var(--rounded);
-  background: var(--surface);
+  background: var(--background);
   overflow: hidden;
   box-shadow: var(--shadow);
 }

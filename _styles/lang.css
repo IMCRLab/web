@@ -16,10 +16,9 @@ html[data-lang=zh] .lang-en {
   flex-shrink: 0;
   overflow: hidden;
   margin: 0;
-  padding: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid currentColor;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--overlay);
   text-transform: none;
   letter-spacing: 0;
   z-index: 12;
@@ -27,27 +26,35 @@ html[data-lang=zh] .lang-en {
 
 .lang-switch button {
   margin: 0;
-  padding: 5px 12px;
+  padding: 6px 14px;
   border: none;
-  border-radius: 999px;
   background: transparent;
   color: inherit;
   font: inherit;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: var(--bold);
   letter-spacing: 0.04em;
   line-height: 1.2;
   cursor: pointer;
-  transition: background var(--transition), color var(--transition);
+}
+
+.lang-switch button + button {
+  border-left: 1px solid currentColor;
 }
 
 .lang-switch button:hover {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .lang-switch button[aria-pressed=true] {
-  background: #ffffff;
-  color: var(--navy);
+  background: var(--primary);
+  color: var(--background);
+}
+
+header[data-big] .lang-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 /*# sourceMappingURL=lang.css.map */

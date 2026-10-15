@@ -1,13 +1,7 @@
 p {
-  margin: 16px 0;
-  text-align: left;
+  margin: 20px 0;
+  text-align: justify;
   line-height: var(--spacing);
-}
-
-section > p,
-section > .lang-en > p,
-section > .lang-zh > p {
-  max-width: 76ch;
 }
 
 /*# sourceMappingURL=paragraph.css.map */
