@@ -6,19 +6,16 @@ title_zh: 交互
 # {% include icon.html icon="fa-solid fa-handshake" %}{% include lang.html en="Interaction" zh="交互" %}
 
 {% capture en %}
-We conduct systematic research on embodied intelligent human–robot interaction and have built an integrated framework covering perception, cognition, generation, and execution. The framework fuses multimodal information such as vision and audition, and coordinates the generation and real-time control of facial expression, speech, lip motion, and body movement.
+A robot face should move with the conversation, not wait for a sentence to end and then switch a single emotion label. EmoManifold reads a continuous affective signal from a language model's hidden states as each token is generated, and drives facial expression in real time.
 {% endcapture %}
 {% capture zh %}
-围绕具身智能人机交互开展系统性研究，构建了覆盖“感知—认知—生成—执行”的一体化交互框架，实现视觉、听觉等多模态信息融合，以及表情、语音、口型和肢体动作的协同生成与实时控制。
+机器人的表情应当跟着对话走，而不是等整句话说完再切换一个情绪标签。EmoManifold 在模型逐词生成时，从内部隐状态读取连续的情感变化，并实时驱动面部表情。
 {% endcapture %}
 {% include lang-block.html en=en zh=zh %}
 
-{%
-  include figure.html
-  image="images/research/interaction.jpg"
-  caption_en="Fifth-generation biomimetic humanoid head and the Jingchu robot platform"
-  caption_zh="第五代高仿生人形机器人智慧头部与荆楚机器人平台"
-%}
+<iframe class="emo-frame" src="{{ '/emomanifold/index.html?embed=1' | relative_url }}" title="EmoManifold"></iframe>
+
+{% include section.html %}
 
 {% capture en %}
 The team independently developed a fifth-generation highly biomimetic humanoid robotic head with rich sensing and high-fidelity affective expression. It has been deployed on platforms such as the Jingchu robot. To support natural interaction, we continue to advance key technologies including continuous emotion modeling, speech-driven lip generation, and multimodal motion generation, enabling more natural, fluent, and emotionally expressive communication.
@@ -32,11 +29,18 @@ These results have been demonstrated in intelligent guiding, education, and medi
 {% endcapture %}
 {% include lang-block.html en=en zh=zh %}
 
-{% include section.html %}
+<figure class="lab-video">
+  <video src="{{ 'images/research/interaction-follow.mp4' | relative_url }}" poster="{{ 'images/research/interaction-head.jpg' | relative_url }}" controls muted playsinline loop></video>
+  <figcaption>{% include lang.html en="Expression following on the biomimetic head" zh="仿生头部的表情跟随" %}</figcaption>
+</figure>
 
-{%
-  include figure.html
-  image="images/research/interaction-face.jpg"
-  caption_en="Lip and jaw degrees of freedom for speech-driven high-fidelity expression"
-  caption_zh="口型与下颌自由度设计，用于语音驱动的高保真表情与口型生成"
-%}
+<div class="lab-split">
+  <figure class="lab-still">
+    <img src="{{ 'images/research/interaction-head.jpg' | relative_url }}" alt="Biomimetic humanoid head">
+    <figcaption>{% include lang.html en="Fifth-generation biomimetic humanoid head" zh="第五代高仿生人形机器人智慧头部" %}</figcaption>
+  </figure>
+  <figure class="lab-video">
+    <video src="{{ 'images/research/interaction-lips.mp4' | relative_url }}" controls muted playsinline loop></video>
+    <figcaption>{% include lang.html en="Speech-driven lip motion" zh="语音驱动的口型" %}</figcaption>
+  </figure>
+</div>

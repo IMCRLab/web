@@ -3,33 +3,34 @@
 
 .tags {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px 18px;
   max-width: 100%;
-  margin: 20px 0;
+  margin: 8px 0 28px;
 }
 
 .tag {
   max-width: 100%;
   margin: 0;
-  padding: 4px 12px;
-  border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--primary) 10%, transparent);
-  color: var(--primary);
-  font-size: 0.8rem;
-  font-weight: var(--semi-bold);
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 500;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: background var(--transition), color var(--transition);
 }
 
 .tag:hover,
 .tag[data-active] {
-  background: var(--primary);
-  color: #ffffff;
+  background: transparent;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }

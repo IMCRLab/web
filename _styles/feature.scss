@@ -15,9 +15,9 @@ $wrap: 800px;
   flex-shrink: 0;
   width: 40%;
   aspect-ratio: 3 / 2;
-  border-radius: var(--rounded);
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .feature-image img {
@@ -32,10 +32,13 @@ $wrap: 800px;
 }
 
 .feature-title {
-  font-size: var(--large);
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 4vw, 3rem);
   text-align: left;
   font-family: var(--heading);
-  font-weight: var(--semi-bold);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
 }
 
 .feature[data-flip] {

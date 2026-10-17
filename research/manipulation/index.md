@@ -16,6 +16,7 @@ To meet the demand for fine, general-purpose robot manipulation in complex envir
 {%
   include figure.html
   image="images/research/manipulation.jpg"
+  fit="contain"
   caption_en="Dexterous hand, bimanual platform, and DexViTac multimodal data collection"
   caption_zh="灵巧手、双臂平台与 DexViTac 多模态操作数据采集"
 %}

@@ -16,6 +16,7 @@ We study lower-limb human–robot rehabilitation systems through an integrated p
 {%
   include figure.html
   image="images/research/others.jpg"
+  fit="contain"
   caption_en="Lower-limb exoskeleton prototypes, musculoskeletal simulation, and human experiments"
   caption_zh="下肢外骨骼样机、生物力学仿真与人体实验"
 %}
