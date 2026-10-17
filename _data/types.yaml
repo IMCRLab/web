@@ -14,12 +14,17 @@ postdoc:
 
 phd:
   icon: fa-solid fa-graduation-cap
-  description: PhD Student
+  description: PhD Candidate
   description_zh: 博士生
+
+master:
+  icon: fa-solid fa-book-open-reader
+  description: Master Student
+  description_zh: 硕士生
 
 undergrad:
   icon: fa-solid fa-user-graduate
-  description: Undergraduate Student
+  description: Undergraduate
   description_zh: 本科生
 
 programmer:

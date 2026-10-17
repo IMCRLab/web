@@ -20,5 +20,36 @@ IMCRL is led by Professor Min Li and currently has more than twenty faculty memb
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
-{% include list.html data="members" component="portrait" filter="role != 'principal-investigator'" %}
+## {% include icon.html icon="fa-solid fa-handshake" %}{% include lang.html en="Interaction" zh="交互" %}
+
+{% assign people = site.members | where: "group", "interaction" | sort: "order" %}
+{% for person in people %}
+  {% include portrait.html lookup=person.slug %}
+{% endfor %}
+
+{% include section.html %}
+
+## {% include icon.html icon="fa-solid fa-hand" %}{% include lang.html en="Manipulation" zh="操作" %}
+
+{% assign people = site.members | where: "group", "manipulation" | sort: "order" %}
+{% for person in people %}
+  {% include portrait.html lookup=person.slug %}
+{% endfor %}
+
+{% include section.html %}
+
+## {% include icon.html icon="fa-solid fa-bolt" %}{% include lang.html en="Electromagnetics" zh="电磁" %}
+
+{% assign people = site.members | where: "group", "electromagnetics" | sort: "order" %}
+{% for person in people %}
+  {% include portrait.html lookup=person.slug %}
+{% endfor %}
+
+{% include section.html %}
+
+## {% include icon.html icon="fa-solid fa-layer-group" %}{% include lang.html en="Others" zh="其他" %}
+
+{% assign people = site.members | where: "group", "others" | sort: "order" %}
+{% for person in people %}
+  {% include portrait.html lookup=person.slug %}
+{% endfor %}
