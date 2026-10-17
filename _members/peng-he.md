@@ -5,7 +5,7 @@ title_zh: 彭赫
 image: images/members/peng-he.jpg
 role: undergrad
 group: manipulation
-order: 10
+order: 11
 aliases:
   - He Peng
   - Peng He
