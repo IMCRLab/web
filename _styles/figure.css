@@ -1,25 +1,43 @@
 .figure {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  gap: 10px;
-  margin: 40px 0;
+  gap: 12px;
+  margin: 32px 0;
 }
 
 .figure-image {
-  display: contents;
+  display: block;
+  width: 100%;
 }
 
 .figure-image img {
-  border-radius: var(--rounded);
-  overflow: hidden;
-  box-shadow: var(--shadow);
+  width: 100%;
+  height: min(52vw, 460px);
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  box-shadow: none;
+  background: #f3f3f6;
+}
+
+.figure[data-fit=contain] .figure-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  background: transparent;
 }
 
 .figure-caption {
-  font-style: italic;
-  text-align: center;
+  max-width: 62ch;
+  color: var(--muted);
+  font-style: normal;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  text-align: left;
 }
 
 /*# sourceMappingURL=figure.css.map */

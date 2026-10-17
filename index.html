@@ -100,10 +100,9 @@
 <link rel="alternate" type="application/rss+xml" href="http://imcrl.com/feed.xml">
 
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -220,6 +219,10 @@
   
 
   
+    <link href="/_styles/home.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/icon.css" rel="stylesheet">
   
 
@@ -241,6 +244,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/pages.css" rel="stylesheet">
   
 
   
@@ -357,6 +364,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -373,6 +382,8 @@
   <script src="/_scripts/anchors.js"></script>
 
   <script src="/_scripts/dark-mode.js"></script>
+
+  <script src="/_scripts/emo-frame.js"></script>
 
   <script src="/_scripts/fetch-tags.js"></script>
 
@@ -398,7 +409,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-big>
+<header class="background" style="--image: url('/images/background.jpg')" data-dark="false">
   <a href="/" class="home">
     
       <span class="logo">
@@ -486,15 +497,15 @@
   
   
 
-  <section class="background" data-size="full" data-dark="true">
+  <section class="background" data-size="full">
     <!--
   <background></background>
-  <dark>true</dark>
+  <dark></dark>
   <size>full</size>
 -->
 
 <div class="hero">
-<div class="hero-inner">
+<div class="hero-layout">
 <div class="hero-copy">
 <div class="hero-affiliation">
 <img src="/images/hust-logo.png" alt="Huazhong University of Science and Technology">
@@ -503,37 +514,21 @@
 </span>
 </div>
 <h1 class="hero-title">
-<span class="lang-en">Intelligent Mechatronics and Control Research Laboratory</span><span class="lang-zh">智能机电与控制实验室</span>
+<span class="lang-en"><span class="hero-strong">Mechatronics</span><span class="hero-muted">and control</span></span>
+<span class="lang-zh"><span class="hero-strong">智能机电</span><span class="hero-muted">与控制实验室</span></span>
 </h1>
 <p class="hero-lead"><span class="lang-en">We build intelligent robots and advanced mechatronic systems that perceive, understand, and act — from emotionally expressive humanoids to dexterous hands and wearable exoskeletons.</span><span class="lang-zh">我们研究能够感知、理解与行动的智能机器人与先进机电系统——从富有情感的仿人机器人，到灵巧手与可穿戴外骨骼。</span>
 </p>
 <div class="hero-actions">
 <a class="button" href="/research"><span class="lang-en">Explore research</span><span class="lang-zh">了解研究</span>
-<i class="icon fa-solid fa-arrow-right"></i></a>
-<a class="button" data-style="outline" href="/contact"><span class="lang-en">Join us</span><span class="lang-zh">加入我们</span>
+</a>
+<a class="button" href="/contact"><span class="lang-en">Join us</span><span class="lang-zh">加入我们</span>
 </a>
 </div>
 </div>
-<div class="hero-mosaic" aria-hidden="true">
-<img src="/images/research/interaction-face.jpg" alt="" loading="eager">
-<img src="/images/research/manipulation-hand.jpg" alt="" loading="eager">
-<img src="/images/research/electromagnetics.jpg" alt="" loading="eager">
-<img src="/images/research/others-device.jpg" alt="" loading="eager">
-</div>
-</div>
-<div class="hero-stats">
-<div>
-<strong>4</strong><span><span class="lang-en">Research directions</span><span class="lang-zh">研究方向</span>
-</span>
-</div>
-<div>
-<strong>20+</strong><span><span class="lang-en">Faculty &amp; students</span><span class="lang-zh">师生成员</span>
-</span>
-</div>
-<div>
-<strong>HUST</strong><span><span class="lang-en">Wuhan, China</span><span class="lang-zh">中国 · 武汉</span>
-</span>
-</div>
+<figure class="hero-figure">
+<img src="/images/research/manipulation-hand.jpg" alt="Dexterous robot hand developed in the laboratory" loading="eager">
+</figure>
 </div>
 </div>
   </section>
@@ -551,8 +546,6 @@
 
 <div class="about">
 <div>
-<p class="eyebrow"><span class="lang-en">About</span><span class="lang-zh">关于我们</span>
-</p>
 <h2>
 <span class="lang-en">Robots that work with people</span><span class="lang-zh">让机器人更懂人、更好地协作</span>
 </h2>
@@ -588,10 +581,8 @@
 
 <div class="section-head">
 <div>
-<p class="eyebrow"><span class="lang-en">Research</span><span class="lang-zh">研究</span>
-</p>
 <h2>
-<span class="lang-en">Research Directions</span><span class="lang-zh">研究方向</span>
+<span class="lang-en">Research</span><span class="lang-zh">研究</span>
 </h2>
 </div>
 <p><span class="lang-en">Four connected directions spanning perception, control, and physical interaction.</span><span class="lang-zh">四个相互关联的方向，覆盖感知、控制与物理交互。</span>
@@ -599,8 +590,8 @@
 </div>
 
 <div class="card" data-style="contain">
-  <a href="/research/interaction" aria-label="card link" class="card-image">
-    <img src="/images/research/interaction-cover.png" alt="card image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/research/interaction" aria-label="Interaction" class="card-image">
+    <img src="/images/research/interaction-cover.png" alt="Interaction" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
@@ -638,8 +629,8 @@
 </div>
 
 <div class="card" data-style="contain">
-  <a href="/research/manipulation" aria-label="card link" class="card-image">
-    <img src="/images/research/manipulation-cover.png" alt="card image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/research/manipulation" aria-label="Manipulation" class="card-image">
+    <img src="/images/research/manipulation-cover.png" alt="Manipulation" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
@@ -677,8 +668,8 @@
 </div>
 
 <div class="card" data-style="contain">
-  <a href="/research/electromagnetics" aria-label="card link" class="card-image">
-    <img src="/images/research/electromagnetics-cover.png" alt="card image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/research/electromagnetics" aria-label="Electromagnetics" class="card-image">
+    <img src="/images/research/electromagnetics-cover.png" alt="Electromagnetics" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
@@ -716,8 +707,8 @@
 </div>
 
 <div class="card" data-style="contain">
-  <a href="/research/others" aria-label="card link" class="card-image">
-    <img src="/images/research/others-cover.png" alt="card image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/research/others" aria-label="Others" class="card-image">
+    <img src="/images/research/others-cover.png" alt="Others" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
@@ -768,26 +759,12 @@
 
 <div class="section-head">
 <div>
-<p class="eyebrow"><span class="lang-en">News</span><span class="lang-zh">新闻</span>
-</p>
 <h2>
-<span class="lang-en">Latest News</span><span class="lang-zh">最新动态</span>
+<span class="lang-en">News</span><span class="lang-zh">动态</span>
 </h2>
 </div>
-
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="/news" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>All news</span>
-      
-    </a>
-  </div>
-
-
+<a class="button" href="/news"><span class="lang-en">All news</span><span class="lang-zh">全部动态</span>
+</a>
 </div>
 
 <div class="post-excerpt-container">
@@ -927,8 +904,8 @@
 -->
 
 <div class="feature">
-  <a href="/team" class="feature-image" aria-label="span class lang-en Meet the Team span span class lang-zh 团队成员 span">
-    <img src="/images/research/interaction.jpg" loading="lazy" alt="span class lang-en Meet the Team span span class lang-zh 团队成员 span" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/team" class="feature-image" aria-label="Meet the team">
+    <img src="/images/research/manipulation-robot.jpg" loading="lazy" alt="span class lang-en Meet the Team span span class lang-zh 团队成员 span" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
@@ -943,8 +920,8 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="/team" data-style="" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
+    <a class="button" href="/team" data-style="" aria-label="Meet the team">
+      
       
         <span>Meet the team</span>
       
@@ -960,8 +937,8 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="/team" data-style="" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
+    <a class="button" href="/team" data-style="" aria-label="了解团队">
+      
       
         <span>了解团队</span>
       
@@ -979,17 +956,15 @@
   
   
 
-  <section class="background" data-size="1" data-dark="true">
+  <section class="background" data-size="page">
     <!--
   <background></background>
-  <dark>true</dark>
-  <size>1</size>
+  <dark></dark>
+  <size></size>
 -->
 
 <div class="cta">
 <div>
-<p class="eyebrow"><span class="lang-en">Opportunities</span><span class="lang-zh">招生与合作</span>
-</p>
 <h2>
 <span class="lang-en">Interested in joining or collaborating?</span><span class="lang-zh">欢迎加入或开展合作</span>
 </h2>
@@ -997,7 +972,7 @@
 </p>
 </div>
 <a class="button" href="/contact"><span class="lang-en">Get in touch</span><span class="lang-zh">联系我们</span>
-<i class="icon fa-solid fa-arrow-right"></i></a>
+</a>
 </div>
   </section>
 
@@ -1006,7 +981,7 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" style="--image: url('/images/background.jpg')" data-dark="false" data-size="wide">
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="/" class="home">

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://imcrl.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://imcrl.com/" rel="alternate" type="text/html" /><updated>2026-10-17T07:10:36+00:00</updated><id>http://imcrl.com/feed.xml</id><title type="html">IMCRL</title><subtitle>The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.</subtitle><entry><title type="html">IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation</title><link href="http://imcrl.com/2026/09/25/dexvitac-iros-2026.html" rel="alternate" type="text/html" title="IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation" /><published>2026-09-25T00:00:00+00:00</published><updated>2026-09-25T00:00:00+00:00</updated><id>http://imcrl.com/2026/09/25/dexvitac-iros-2026</id><content type="html" xml:base="http://imcrl.com/2026/09/25/dexvitac-iros-2026.html"><![CDATA[<div class="lang-en">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://imcrl.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://imcrl.com/" rel="alternate" type="text/html" /><updated>2026-10-17T08:27:00+00:00</updated><id>http://imcrl.com/feed.xml</id><title type="html">IMCRL</title><subtitle>The Intelligent Mechatronics and Control Research Laboratory (IMCRL) at Huazhong University of Science and Technology is led by Professor Min Li. The lab studies intelligent robots and advanced mechatronic systems, including embodied human–robot interaction, dexterous manipulation, electromagnetic sensing, magnetic tactile perception, and wearable exoskeletons.</subtitle><entry><title type="html">IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation</title><link href="http://imcrl.com/2026/09/25/dexvitac-iros-2026.html" rel="alternate" type="text/html" title="IROS 2026 | DexViTac: Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation" /><published>2026-09-25T00:00:00+00:00</published><updated>2026-09-25T00:00:00+00:00</updated><id>http://imcrl.com/2026/09/25/dexvitac-iros-2026</id><content type="html" xml:base="http://imcrl.com/2026/09/25/dexvitac-iros-2026.html"><![CDATA[<div class="lang-en">
 <p>Everyday dexterous manipulation depends not only on motion trajectories but also on tactile cues such as contact location and pressure changes. Professor Min Li’s team presents <strong>DexViTac</strong>, a framework that collects multimodal demonstrations from natural human manipulation and learns contact-rich robot policies from them.</p>
 
 <p>The paper, <em>DexViTac: Collecting Human Visuo-Tactile-Kinematic Demonstrations for Contact-Rich Dexterous Manipulation</em>, is published at IROS 2026. Authors: Xitong Chen, Yifeng Pan, Min Li, and Xiaotian Ding (corresponding author: Min Li).</p>
@@ -10,7 +10,7 @@
 </div>
 
 <div class="button-wrapper">
-    <a class="button" href="https://xitong-c.github.io/DexViTac/" data-style="" aria-label="fa-solid fa-globe">
+    <a class="button" href="https://xitong-c.github.io/DexViTac/" data-style="" aria-label="span class lang-en Project page span span class lang-zh 项目主页 span">
       <i class="icon fa-solid fa-globe"></i>
       
         <span><span class="lang-en">Project page</span><span class="lang-zh">项目主页</span>
@@ -20,7 +20,7 @@
   </div>
 
 <div class="button-wrapper">
-    <a class="button" href="https://mp.weixin.qq.com/s/5L1n7e69Y3P1iwUITiX5xA" data-style="" aria-label="fa-brands fa-weixin">
+    <a class="button" href="https://mp.weixin.qq.com/s/5L1n7e69Y3P1iwUITiX5xA" data-style="" aria-label="span class lang-en Read on WeChat span span class lang-zh 阅读公众号原文 span">
       <i class="icon fa-brands fa-weixin"></i>
       
         <span><span class="lang-en">Read on WeChat</span><span class="lang-zh">阅读公众号原文</span>
@@ -49,10 +49,7 @@
 
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/news/2026-09-25-dexvitac-system.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;" />
+    <img src="/images/news/2026-09-25-dexvitac-system.png" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;" />
   </a>
   
   
@@ -77,10 +74,7 @@
 
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/news/2026-09-25-dexvitac-sync.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;" />
+    <img src="/images/news/2026-09-25-dexvitac-sync.png" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;" />
   </a>
   
   
@@ -105,10 +99,7 @@
 
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/news/2026-09-25-dexvitac-learning.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;" />
+    <img src="/images/news/2026-09-25-dexvitac-learning.png" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;" />
   </a>
   
   
@@ -156,10 +147,7 @@
 
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/news/2026-09-25-dexvitac-results.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;" />
+    <img src="/images/news/2026-09-25-dexvitac-results.png" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;" />
   </a>
   
   
@@ -224,7 +212,7 @@
 -->
 
 <div class="button-wrapper">
-    <a class="button" href="/research" data-style="" data-flip="" aria-label="fa-solid fa-arrow-right">
+    <a class="button" href="/research" data-style="" data-flip="" aria-label="span class lang-en Explore our research span span class lang-zh 了解研究方向 span">
       <i class="icon fa-solid fa-arrow-right"></i>
       
         <span><span class="lang-en">Explore our research</span><span class="lang-zh">了解研究方向</span>
@@ -234,7 +222,7 @@
   </div>
 
 <div class="button-wrapper">
-    <a class="button" href="https://mp.weixin.qq.com/s/qC4LsFmPwYjeHGmSU2dTtA" data-style="" aria-label="fa-brands fa-weixin">
+    <a class="button" href="https://mp.weixin.qq.com/s/qC4LsFmPwYjeHGmSU2dTtA" data-style="" aria-label="span class lang-en Read on WeChat span span class lang-zh 阅读公众号原文 span">
       <i class="icon fa-brands fa-weixin"></i>
       
         <span><span class="lang-en">Read on WeChat</span><span class="lang-zh">阅读公众号原文</span>

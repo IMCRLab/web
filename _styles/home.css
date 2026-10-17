@@ -1,0 +1,155 @@
+.hero {
+  padding: 12px max(28px, (100% - var(--page)) / 2) 88px;
+}
+
+.hero-affiliation {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.hero-affiliation img {
+  width: 46px;
+  height: auto;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 460px);
+  gap: 64px;
+  align-items: center;
+}
+
+.hero-affiliation {
+  margin-bottom: 28px;
+}
+
+html[data-dark=false] .hero-affiliation img {
+  filter: brightness(0);
+}
+
+.hero-title {
+  margin: 0 0 22px;
+  font-weight: 400;
+  font-size: clamp(2.8rem, 5vw, 4.35rem);
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+}
+
+.hero-strong,
+.hero-muted {
+  display: block;
+}
+
+.hero-muted {
+  color: color-mix(in srgb, var(--text) 42%, var(--background));
+}
+
+.hero-lead {
+  max-width: 36rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.hero-figure {
+  margin: 0;
+}
+
+.hero-figure img {
+  display: block;
+  width: 100%;
+  height: min(72vh, 640px);
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.about h2 {
+  margin: 0;
+}
+
+.about-text p {
+  max-width: 58ch;
+  color: var(--dark-gray);
+  font-size: 1.08rem;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+  margin-bottom: 36px;
+}
+
+.section-head h2 {
+  margin: 0;
+}
+
+.section-head p {
+  max-width: 32ch;
+  margin: 0;
+  color: var(--muted);
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+}
+
+.cta h2,
+.cta p {
+  margin: 0;
+}
+
+.cta p {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+@media (max-width: 900px) {
+  .hero-layout,
+  .about,
+  .section-head,
+  .cta {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-figure img {
+    height: 52vw;
+    min-height: 240px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

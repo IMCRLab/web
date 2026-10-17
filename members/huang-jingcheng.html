@@ -100,10 +100,9 @@
 <link rel="alternate" type="application/rss+xml" href="http://imcrl.com/feed.xml">
 
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -220,6 +219,10 @@
   
 
   
+    <link href="/_styles/home.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/icon.css" rel="stylesheet">
   
 
@@ -241,6 +244,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/pages.css" rel="stylesheet">
   
 
   
@@ -320,6 +327,8 @@
 
   <script src="/_scripts/dark-mode.js"></script>
 
+  <script src="/_scripts/emo-frame.js"></script>
+
   <script src="/_scripts/fetch-tags.js"></script>
 
   <script src="/_scripts/lang.js"></script>
@@ -344,7 +353,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')" data-dark="true">
+<header class="background" style="--image: url('/images/background.jpg')" data-dark="false">
   <a href="/" class="home">
     
       <span class="logo">
@@ -462,7 +471,21 @@
   </a>
 </div>
 
-<div>
+
+</div>
+
+
+
+<div class="lang-en">
+<p>Jingcheng Huang is a PhD Candidate in the School of Mechanical Science and Engineering at Huazhong University of Science and Technology. The research covers embodied intelligence and human–robot interaction, with a focus on facial-expression generation for humanoid robots and on building interaction systems. The work studies coordinated generation of facial and body motion, aiming to make robot interaction more humanlike and to support natural, fluent affective communication.</p>
+</div>
+<div class="lang-zh">
+<p>本人为华中科技大学机械学院博士研究生，主要研究方向为具身智能与人机交互。研究工作聚焦人形机器人面部表情生成、交互系统搭建，探索面部与肢体动作协同生成方法，致力于提升机器人拟人化交互能力，构建自然流畅的人机情感交互体系。</p>
+</div>
+
+
+
+<div class="member-links">
   
     
     
@@ -479,32 +502,17 @@
     </a>
   </div>
 
-<br>
+
   
 </div>
 
 
-</div>
 
 
 
-<div class="lang-en">
-<p>Jingcheng Huang is a PhD Candidate in the School of Mechanical Science and Engineering at Huazhong University of Science and Technology. The research covers embodied intelligence and human–robot interaction, with a focus on facial-expression generation for humanoid robots and on building interaction systems. The work studies coordinated generation of facial and body motion, aiming to make robot interaction more humanlike and to support natural, fluent affective communication.</p>
-</div>
-<div class="lang-zh">
-<p>本人为华中科技大学机械学院博士研究生，主要研究方向为具身智能与人机交互。研究工作聚焦人形机器人面部表情生成、交互系统搭建，探索面部与肢体动作协同生成方法，致力于提升机器人拟人化交互能力，构建自然流畅的人机情感交互体系。</p>
-</div>
-
-
-
-
-
-
-
-<p class="center">
+<p>
   <a href="/research/?search=%22Jingcheng%20Huang%22%20%22Huang%20Jingcheng%22%20">
-    <span class="lang-en">Search for </span><span class="lang-zh">在研究页面检索 </span>
-黄兢诚<span class="lang-en">'s papers on the Research page</span><span class="lang-zh"> 的论文</span>
+    <span class="lang-en">Papers</span><span class="lang-zh">论文</span>
 
   </a>
 </p>
@@ -525,7 +533,7 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" style="--image: url('/images/background.jpg')" data-dark="false" data-size="wide">
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="/" class="home">

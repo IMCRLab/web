@@ -100,10 +100,9 @@
 <link rel="alternate" type="application/rss+xml" href="http://imcrl.com/feed.xml">
 
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -220,6 +219,10 @@
   
 
   
+    <link href="/_styles/home.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/icon.css" rel="stylesheet">
   
 
@@ -241,6 +244,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/pages.css" rel="stylesheet">
   
 
   
@@ -320,6 +327,8 @@
 
   <script src="/_scripts/dark-mode.js"></script>
 
+  <script src="/_scripts/emo-frame.js"></script>
+
   <script src="/_scripts/fetch-tags.js"></script>
 
   <script src="/_scripts/lang.js"></script>
@@ -344,7 +353,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')" data-dark="true">
+<header class="background" style="--image: url('/images/background.jpg')" data-dark="false">
   <a href="/" class="home">
     
       <span class="logo">
@@ -462,7 +471,21 @@
   </a>
 </div>
 
-<div>
+
+</div>
+
+
+
+<div class="lang-en">
+<p>Ziqian Zhao is glad to join IMCRL. Undergraduate study was at South China University of Technology, including work on a driverless formula race car. Current interests are robot manipulation and perception, including perception, decision-making, and control.</p>
+</div>
+<div class="lang-zh">
+<p>hello，我是赵梓谦，很高兴加入IMCRL！我本科就读于华南理工大学，曾经参与无人驾驶方程式赛车的开发。目前主要关注机器人操作与感知，希望能与大家一起探索机器人感知、决策与控制等方面的问题。</p>
+</div>
+
+
+
+<div class="member-links">
   
     
     
@@ -479,7 +502,7 @@
     </a>
   </div>
 
-<br>
+
   
     
     
@@ -496,32 +519,17 @@
     </a>
   </div>
 
-<br>
+
   
 </div>
 
 
-</div>
 
 
 
-<div class="lang-en">
-<p>Ziqian Zhao is glad to join IMCRL. Undergraduate study was at South China University of Technology, including work on a driverless formula race car. Current interests are robot manipulation and perception, including perception, decision-making, and control.</p>
-</div>
-<div class="lang-zh">
-<p>hello，我是赵梓谦，很高兴加入IMCRL！我本科就读于华南理工大学，曾经参与无人驾驶方程式赛车的开发。目前主要关注机器人操作与感知，希望能与大家一起探索机器人感知、决策与控制等方面的问题。</p>
-</div>
-
-
-
-
-
-
-
-<p class="center">
+<p>
   <a href="/research/?search=%22Ziqian%20Zhao%22%20%22Zhao%20Ziqian%22%20">
-    <span class="lang-en">Search for </span><span class="lang-zh">在研究页面检索 </span>
-赵梓谦<span class="lang-en">'s papers on the Research page</span><span class="lang-zh"> 的论文</span>
+    <span class="lang-en">Papers</span><span class="lang-zh">论文</span>
 
   </a>
 </p>
@@ -542,7 +550,7 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" style="--image: url('/images/background.jpg')" data-dark="false" data-size="wide">
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="/" class="home">

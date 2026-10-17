@@ -3,23 +3,43 @@
 }
 
 section:has(> .portrait-wrapper) {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 8px;
+  justify-items: center;
+  text-align: left;
 }
 
+section:has(> .portrait-wrapper) > :not(.portrait-wrapper) {
+  grid-column: 1/-1;
+  justify-self: start;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  section:has(> .portrait-wrapper) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1040px) {
+  section:has(> .portrait-wrapper) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
 .portrait {
   position: relative;
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin: 14px;
-  padding: 26px 18px 22px;
-  width: 210px;
-  max-width: calc(100% - 28px);
-  border: 1px solid var(--line);
-  border-radius: var(--rounded);
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  margin: 0;
+  padding: 8px 8px 16px;
+  width: min(200px, 100%);
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   color: var(--text);
   text-align: center;
   text-decoration: none;
@@ -28,9 +48,8 @@ section:has(> .portrait-wrapper) {
 }
 
 a.portrait[href]:hover {
-  transform: translateY(-5px);
-  border-color: color-mix(in srgb, var(--primary) 50%, var(--line));
-  box-shadow: var(--shadow-hover);
+  transform: none;
+  box-shadow: none;
 }
 
 .portrait[data-style=small] {
@@ -48,10 +67,10 @@ a.portrait[href]:hover {
 }
 
 .portrait .icon {
+  display: none;
   position: absolute;
   left: 18px;
   top: 18px;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 34px;
@@ -78,9 +97,9 @@ a.portrait[href]:hover {
   max-width: 100%;
   margin-bottom: 16px;
   aspect-ratio: 1/1;
-  border: 4px solid var(--surface);
+  border: none;
   border-radius: 999px;
-  outline: 2px solid color-mix(in srgb, var(--primary) 45%, transparent);
+  outline: none;
   object-fit: cover;
   background: var(--background-alt);
 }
@@ -97,8 +116,9 @@ a.portrait[href]:hover {
 
 .portrait-name {
   font-family: var(--heading);
-  font-size: 1.05rem;
-  font-weight: var(--heavy);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 .portrait-description {

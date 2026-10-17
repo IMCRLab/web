@@ -100,10 +100,9 @@
 <link rel="alternate" type="application/rss+xml" href="http://imcrl.com/feed.xml">
 
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -220,6 +219,10 @@
   
 
   
+    <link href="/_styles/home.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/icon.css" rel="stylesheet">
   
 
@@ -241,6 +244,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/pages.css" rel="stylesheet">
   
 
   
@@ -357,6 +364,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -373,6 +382,8 @@
   <script src="/_scripts/anchors.js"></script>
 
   <script src="/_scripts/dark-mode.js"></script>
+
+  <script src="/_scripts/emo-frame.js"></script>
 
   <script src="/_scripts/fetch-tags.js"></script>
 
@@ -398,7 +409,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')" data-dark="true">
+<header class="background" style="--image: url('/images/background.jpg')" data-dark="false">
   <a href="/" class="home">
     
       <span class="logo">
@@ -498,12 +509,9 @@
 <p>实验室围绕下肢人机共融康复机器人开展系统性研究，搭建人体生物力学建模 — 多模态运动感知 — 个性化助力生成 — 实体样机验证一体化研发体系，同时覆盖脑卒中坐立康复、老年平地行走两大核心场景，形成两类差异化外骨骼成套技术方案。</p>
 </div>
 
-<figure class="figure">
+<figure class="figure" data-fit="contain">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/research/others.jpg" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/research/others.jpg" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
   
@@ -542,10 +550,7 @@
   
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/research/others-device.jpg" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/research/others-device.jpg" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
   
@@ -559,10 +564,7 @@
 
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/research/others-gait.jpg" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/research/others-gait.jpg" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
   
@@ -583,7 +585,7 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" style="--image: url('/images/background.jpg')" data-dark="false" data-size="wide">
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="/" class="home">

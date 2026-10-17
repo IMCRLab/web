@@ -100,10 +100,9 @@
 <link rel="alternate" type="application/rss+xml" href="http://imcrl.com/feed.xml">
 
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -220,6 +219,10 @@
   
 
   
+    <link href="/_styles/home.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/icon.css" rel="stylesheet">
   
 
@@ -241,6 +244,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/pages.css" rel="stylesheet">
   
 
   
@@ -320,6 +327,8 @@
 
   <script src="/_scripts/dark-mode.js"></script>
 
+  <script src="/_scripts/emo-frame.js"></script>
+
   <script src="/_scripts/fetch-tags.js"></script>
 
   <script src="/_scripts/lang.js"></script>
@@ -344,7 +353,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')" data-dark="true">
+<header class="background" style="--image: url('/images/background.jpg')" data-dark="false">
   <a href="/" class="home">
     
       <span class="logo">
@@ -462,7 +471,21 @@
   </a>
 </div>
 
-<div>
+
+</div>
+
+
+
+<div class="lang-en">
+<p>Yifeng Pan is a PhD Candidate in the School of Mechanical Science and Engineering at Huazhong University of Science and Technology. The research covers robotic tactile perception and intelligent manipulation, including tactile-sensor modeling and simulation, unified tactile representation learning across sensors and geometries, and sim-to-real transfer, with the aim of improving perception, generalization, and adaptation in complex contact and fine manipulation.</p>
+</div>
+<div class="lang-zh">
+<p>华中科技大学机械科学与工程学院博士研究生，主要研究方向为机器人触觉感知与智能操作。关注触觉传感器建模与仿真、跨传感器及跨几何构型的统一触觉表征学习，以及仿真到现实的迁移方法，致力于提升机器人在复杂接触与精细操作任务中的感知、泛化与适应能力。</p>
+</div>
+
+
+
+<div class="member-links">
   
     
     
@@ -479,32 +502,17 @@
     </a>
   </div>
 
-<br>
+
   
 </div>
 
 
-</div>
 
 
 
-<div class="lang-en">
-<p>Yifeng Pan is a PhD Candidate in the School of Mechanical Science and Engineering at Huazhong University of Science and Technology. The research covers robotic tactile perception and intelligent manipulation, including tactile-sensor modeling and simulation, unified tactile representation learning across sensors and geometries, and sim-to-real transfer, with the aim of improving perception, generalization, and adaptation in complex contact and fine manipulation.</p>
-</div>
-<div class="lang-zh">
-<p>华中科技大学机械科学与工程学院博士研究生，主要研究方向为机器人触觉感知与智能操作。关注触觉传感器建模与仿真、跨传感器及跨几何构型的统一触觉表征学习，以及仿真到现实的迁移方法，致力于提升机器人在复杂接触与精细操作任务中的感知、泛化与适应能力。</p>
-</div>
-
-
-
-
-
-
-
-<p class="center">
+<p>
   <a href="/research/?search=%22Yifeng%20Pan%22%20%22Pan%20Yifeng%22%20">
-    <span class="lang-en">Search for </span><span class="lang-zh">在研究页面检索 </span>
-潘逸峰<span class="lang-en">'s papers on the Research page</span><span class="lang-zh"> 的论文</span>
+    <span class="lang-en">Papers</span><span class="lang-zh">论文</span>
 
   </a>
 </p>
@@ -525,7 +533,7 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" style="--image: url('/images/background.jpg')" data-dark="false" data-size="wide">
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="/" class="home">

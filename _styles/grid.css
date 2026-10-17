@@ -1,11 +1,11 @@
 .grid {
   display: grid;
-  --repeat: 3;
-  grid-template-columns: repeat(var(--repeat), 1fr);
+  --repeat: 2;
+  grid-template-columns: repeat(var(--repeat), minmax(0, 1fr));
   justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  margin: 40px 0;
+  align-items: start;
+  gap: 40px 28px;
+  margin: 8px 0 20px;
 }
 
 .grid > * {
@@ -36,6 +36,19 @@
   object-fit: cover;
   max-width: unset;
   max-height: unset;
+}
+
+.grid .figure {
+  margin: 0;
+}
+
+.grid .figure img {
+  width: 100%;
+  height: 280px;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
 }
 
 .grid > :where(h1, h2, h3, h4, h5, h6) {

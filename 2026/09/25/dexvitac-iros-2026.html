@@ -100,10 +100,9 @@
 <link rel="alternate" type="application/rss+xml" href="http://imcrl.com/feed.xml">
 
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -220,6 +219,10 @@
   
 
   
+    <link href="/_styles/home.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/icon.css" rel="stylesheet">
   
 
@@ -241,6 +244,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/pages.css" rel="stylesheet">
   
 
   
@@ -320,6 +327,8 @@
 
   <script src="/_scripts/dark-mode.js"></script>
 
+  <script src="/_scripts/emo-frame.js"></script>
+
   <script src="/_scripts/fetch-tags.js"></script>
 
   <script src="/_scripts/lang.js"></script>
@@ -344,7 +353,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')" data-dark="true">
+<header class="background" style="--image: url('/images/background.jpg')" data-dark="false">
   <a href="/" class="home">
     
       <span class="logo">
@@ -432,11 +441,11 @@
   
   
 
-  <section class="background" data-size="1" style="--image: url('/images/news/2026-09-25-dexvitac-cover.jpg')">
+  <section class="background" data-size="page">
     <!--
-  <background>images/news/2026-09-25-dexvitac-cover.jpg</background>
+  <background></background>
   <dark></dark>
-  <size>1</size>
+  <size></size>
 -->
 
 
@@ -502,7 +511,7 @@
 </div>
 
 <div class="button-wrapper">
-    <a class="button" href="https://xitong-c.github.io/DexViTac/" data-style="" aria-label="fa-solid fa-globe">
+    <a class="button" href="https://xitong-c.github.io/DexViTac/" data-style="" aria-label="span class lang-en Project page span span class lang-zh 项目主页 span">
       <i class="icon fa-solid fa-globe"></i>
       
         <span><span class="lang-en">Project page</span><span class="lang-zh">项目主页</span>
@@ -512,7 +521,7 @@
   </div>
 
 <div class="button-wrapper">
-    <a class="button" href="https://mp.weixin.qq.com/s/5L1n7e69Y3P1iwUITiX5xA" data-style="" aria-label="fa-brands fa-weixin">
+    <a class="button" href="https://mp.weixin.qq.com/s/5L1n7e69Y3P1iwUITiX5xA" data-style="" aria-label="span class lang-en Read on WeChat span span class lang-zh 阅读公众号原文 span">
       <i class="icon fa-brands fa-weixin"></i>
       
         <span><span class="lang-en">Read on WeChat</span><span class="lang-zh">阅读公众号原文</span>
@@ -546,10 +555,7 @@
 
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/news/2026-09-25-dexvitac-system.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/news/2026-09-25-dexvitac-system.png" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
   
@@ -574,10 +580,7 @@
 
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/news/2026-09-25-dexvitac-sync.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/news/2026-09-25-dexvitac-sync.png" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
   
@@ -602,10 +605,7 @@
 
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/news/2026-09-25-dexvitac-learning.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/news/2026-09-25-dexvitac-learning.png" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
   
@@ -664,10 +664,7 @@
 
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
-    <img src="/images/news/2026-09-25-dexvitac-results.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/news/2026-09-25-dexvitac-results.png" alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
   
@@ -712,7 +709,7 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" style="--image: url('/images/background.jpg')" data-dark="false" data-size="wide">
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="/" class="home">

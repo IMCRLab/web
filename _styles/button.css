@@ -10,34 +10,30 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  max-width: calc(100% - 5px - 5px);
-  margin: 5px;
-  padding: 11px 22px;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  background: var(--primary);
-  color: #ffffff;
+  gap: 8px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 0 2px;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  background: transparent;
+  color: var(--text);
   text-align: center;
   font: inherit;
-  font-family: var(--heading);
-  font-size: 0.95rem;
-  font-weight: var(--bold);
+  font-family: var(--body);
+  font-size: 1rem;
+  font-weight: 500;
   text-decoration: none;
   vertical-align: middle;
   appearance: none;
-  transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition), box-shadow var(--transition);
-}
-
-[data-dark=true] .button:not([data-style]) {
-  color: var(--navy);
 }
 
 .button:hover {
-  background: var(--secondary);
-  color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
+  background: transparent;
+  color: var(--muted);
+  transform: none;
+  box-shadow: none;
 }
 
 .button .icon {
@@ -61,14 +57,14 @@ button {
 }
 
 .button[data-style=outline] {
-  border-color: currentColor;
+  border: none;
+  border-bottom: 1px solid currentColor;
   background: transparent;
   color: var(--text);
 }
 .button[data-style=outline]:hover {
-  border-color: var(--primary);
-  background: var(--primary);
-  color: #ffffff;
+  background: transparent;
+  color: var(--muted);
 }
 
 .button[data-flip] {

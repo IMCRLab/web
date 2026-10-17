@@ -100,10 +100,9 @@
 <link rel="alternate" type="application/rss+xml" href="http://imcrl.com/feed.xml">
 
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -220,6 +219,10 @@
   
 
   
+    <link href="/_styles/home.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/icon.css" rel="stylesheet">
   
 
@@ -241,6 +244,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/pages.css" rel="stylesheet">
   
 
   
@@ -320,6 +327,8 @@
 
   <script src="/_scripts/dark-mode.js"></script>
 
+  <script src="/_scripts/emo-frame.js"></script>
+
   <script src="/_scripts/fetch-tags.js"></script>
 
   <script src="/_scripts/lang.js"></script>
@@ -344,7 +353,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')" data-dark="true">
+<header class="background" style="--image: url('/images/background.jpg')" data-dark="false">
   <a href="/" class="home">
     
       <span class="logo">
@@ -462,7 +471,21 @@
   </a>
 </div>
 
-<div>
+
+</div>
+
+
+
+<div class="lang-en">
+<p>Yuguang Chen is a Master Student at Huazhong University of Science and Technology, with a bachelor’s degree in mechanical design, manufacturing, and automation from the same university. Current work is on robot actuation, control, and dexterous manipulation, with a focus on dexterous manipulation of deformable objects.</p>
+</div>
+<div class="lang-zh">
+<p>陈宇光，华中科技大学硕士研究生。本科毕业于华中科技大学机械设计制造及其自动化专业。目前主要从事机器人驱动控制与灵巧操作方向相关研究，重点关注机器人的柔性物体灵巧操作问题期望在相关领域取得一定突破。</p>
+</div>
+
+
+
+<div class="member-links">
   
     
     
@@ -479,7 +502,7 @@
     </a>
   </div>
 
-<br>
+
   
     
     
@@ -496,32 +519,17 @@
     </a>
   </div>
 
-<br>
+
   
 </div>
 
 
-</div>
 
 
 
-<div class="lang-en">
-<p>Yuguang Chen is a Master Student at Huazhong University of Science and Technology, with a bachelor’s degree in mechanical design, manufacturing, and automation from the same university. Current work is on robot actuation, control, and dexterous manipulation, with a focus on dexterous manipulation of deformable objects.</p>
-</div>
-<div class="lang-zh">
-<p>陈宇光，华中科技大学硕士研究生。本科毕业于华中科技大学机械设计制造及其自动化专业。目前主要从事机器人驱动控制与灵巧操作方向相关研究，重点关注机器人的柔性物体灵巧操作问题期望在相关领域取得一定突破。</p>
-</div>
-
-
-
-
-
-
-
-<p class="center">
+<p>
   <a href="/research/?search=%22Yuguang%20Chen%22%20%22Chen%20Yuguang%22%20">
-    <span class="lang-en">Search for </span><span class="lang-zh">在研究页面检索 </span>
-陈宇光<span class="lang-en">'s papers on the Research page</span><span class="lang-zh"> 的论文</span>
+    <span class="lang-en">Papers</span><span class="lang-zh">论文</span>
 
   </a>
 </p>
@@ -542,7 +550,7 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" style="--image: url('/images/background.jpg')" data-dark="false" data-size="wide">
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="/" class="home">
