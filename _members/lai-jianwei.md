@@ -5,7 +5,7 @@ title_zh: 赖建尉
 image: images/members/lai-jianwei.jpg
 role: undergrad
 group: interaction
-order: 5
+order: 6
 aliases:
   - Jianwei Lai
   - Lai Jianwei

@@ -5,7 +5,7 @@ title_zh: 范福祥
 image: images/members/fan-fuxiang.jpg
 role: master
 group: electromagnetics
-order: 2
+order: 3
 aliases:
   - Fuxiang Fan
   - Fan Fuxiang

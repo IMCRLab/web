@@ -5,7 +5,7 @@ title_zh: 林铭泉
 image: images/members/lin-mingquan.jpg
 role: undergrad
 group: interaction
-order: 6
+order: 7
 aliases:
   - Mingquan Lin
   - Lin Mingquan

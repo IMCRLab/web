@@ -5,7 +5,7 @@ title_zh: 谢子楠
 image: images/members/xie-zinan.jpg
 role: undergrad
 group: manipulation
-order: 7
+order: 9
 aliases:
   - Zinan Xie
   - Xie Zinan

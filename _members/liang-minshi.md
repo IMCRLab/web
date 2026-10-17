@@ -5,7 +5,7 @@ title_zh: 梁敏诗
 image: images/members/liang-minshi.jpg
 role: master
 group: electromagnetics
-order: 4
+order: 5
 aliases:
   - Minshi Liang
   - Liang Minshi

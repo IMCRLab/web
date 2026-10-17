@@ -5,7 +5,7 @@ title_zh: 车阳开
 image: images/members/che-yangkai.jpg
 role: phd
 group: electromagnetics
-order: 5
+order: 2
 aliases:
   - Yangkai Che
   - Che Yangkai

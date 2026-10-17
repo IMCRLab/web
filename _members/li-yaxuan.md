@@ -5,7 +5,7 @@ title_zh: 黎亚轩
 image: images/members/li-yaxuan.jpg
 role: master
 group: electromagnetics
-order: 3
+order: 4
 aliases:
   - Yaxuan Li
   - Li Yaxuan

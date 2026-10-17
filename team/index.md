@@ -14,6 +14,9 @@ nav:
 
 <div class="advisor">
   <div>
+    <a class="advisor-photo" href="{{ pi.url | relative_url }}">
+      <img src="{{ pi.image | relative_url }}" alt="Min Li">
+    </a>
     <p class="advisor-kicker">{% include lang.html en="Principal Investigator" zh="实验室负责人" %}</p>
     <h2 class="advisor-name"><a href="{{ pi.url | relative_url }}">{% include lang.html en="Min Li" zh="李敏" %}</a></h2>
     <p class="advisor-role">{% include lang.html en="Professor, School of Mechanical Science and Engineering" zh="机械科学与工程学院教授" %}</p>

@@ -5,7 +5,7 @@ title_zh: 尚文博
 image: images/members/shang-wenbo.jpg
 role: master
 group: manipulation
-order: 8
+order: 7
 aliases:
   - Wenbo Shang
   - Shang Wenbo

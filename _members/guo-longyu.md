@@ -5,7 +5,7 @@ title_zh: 郭龙宇
 image: images/members/guo-longyu.jpg
 role: master
 group: manipulation
-order: 9
+order: 8
 aliases:
   - Longyu Guo
   - Guo Longyu

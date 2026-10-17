@@ -5,7 +5,7 @@ title_zh: 孙昊
 image: images/members/sun-hao.jpg
 role: master
 group: interaction
-order: 7
+order: 5
 aliases:
   - Hao Sun
   - Sun Hao

@@ -2,6 +2,7 @@
 name: 李敏
 title: Min Li
 title_zh: 李敏
+image: images/members/li-min.jpg
 role: principal-investigator
 description_en: Professor
 description_zh: 教授
