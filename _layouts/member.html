@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% if page.image %}
 {% capture floatcontent %}
 
 {% include portrait.html lookup=page.slug %}
@@ -9,6 +10,7 @@ layout: default
 {% endcapture %}
 
 {% include float.html content=floatcontent %}
+{% endif %}
 
 {{ content }}
 
