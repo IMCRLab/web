@@ -23,6 +23,11 @@
 }
 
 :root {
+  --navy: #0c2340;
+  --navy-2: #164e78;
+  --accent: #7dd3fc;
+  --page: 1120px;
+  --shadow-hover: 0 16px 36px rgba(12, 35, 64, 0.16);
   --title: "Barlow", sans-serif;
   --heading: "Barlow", sans-serif;
   --body: "Barlow", sans-serif;
