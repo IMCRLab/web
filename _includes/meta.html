@@ -32,13 +32,14 @@
 
 {% assign description = description | xml_escape %}
 
+{% assign svg = "images/logo.svg" | file_exists %}
 {% assign png = "images/icon.png" | file_exists %}
 {% assign jpg = "images/icon.jpg" | file_exists %}
-{% assign icon = png | default: jpg | relative_url %}
+{% assign icon = svg | default: png | default: jpg %}
 
-{% assign jpg = "images/share.jpg" | file_exists %}
 {% assign png = "images/share.png" | file_exists %}
-{% assign share = jpg | default: png | relative_url %}
+{% assign jpg = "images/share.jpg" | file_exists %}
+{% assign share = png | default: jpg | default: icon %}
 
 {% assign published = page.date | date_to_xmlschema %}
 {% assign updated = page.last_modified_at | date_to_xmlschema %}
@@ -49,7 +50,10 @@
 
 <title>{{ fulltitle }}</title>
 
-<link rel="icon" href="{{ icon }}">
+<link rel="icon" href="{{ icon | relative_url }}"{% if icon contains ".svg" %} type="image/svg+xml"{% endif %}>
+{% if png %}
+  <link rel="apple-touch-icon" href="{{ "images/icon.png" | relative_url }}">
+{% endif %}
 
 <meta name="title" content="{{ title }}">
 <meta name="description" content="{{ description }}">
@@ -58,14 +62,14 @@
 <meta property="og:site_title" content="{{ site.title | xml_escape }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:url" content="{{ url }}">
-<meta property="og:image" content="{{ share }}">
+<meta property="og:image" content="{{ share | absolute_url }}">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="{{ title }}">
 <meta property="twitter:description" content="{{ description }}">
 <meta property="twitter:url" content="{{ url }}">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="{{ share }}">
+<meta property="twitter:image" content="{{ share | absolute_url }}">
 
 {% if page.author %}
   <meta name="author" content="{{ page.author | xml_escape }}">
@@ -94,7 +98,7 @@
     "headline": "{{ title }}",
     "publisher": {
       "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
+      "logo": { "@type": "ImageObject", "url": "{{ icon | absolute_url }}" }
     },
     "url": "{{ url }}"
   }
