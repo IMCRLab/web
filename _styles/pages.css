@@ -1,9 +1,14 @@
-body[data-layout=member] main > section {
+body[data-layout=member] main > section:has(> .float) {
   display: grid;
   grid-template-columns: 220px minmax(0, 40rem);
   column-gap: 64px;
   justify-content: start;
   align-items: start;
+}
+
+body[data-layout=member] main > section:not(:has(> .float)) .lang-en,
+body[data-layout=member] main > section:not(:has(> .float)) .lang-zh {
+  max-width: 46rem;
 }
 
 body[data-layout=member] .float {
@@ -92,7 +97,7 @@ form {
 }
 
 @media (max-width: 760px) {
-  body[data-layout=member] main > section {
+  body[data-layout=member] main > section:has(> .float) {
     grid-template-columns: 1fr;
   }
   body[data-layout=member] .float,
@@ -222,6 +227,74 @@ main > section:first-of-type:has(> h1) .contact-layout > div:last-child p {
   }
   .contact-layout a[href^="mailto:"] {
     font-size: 1.35rem;
+  }
+}
+.advisor {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+  gap: 12px 72px;
+  align-items: start;
+  margin-top: 28px;
+}
+
+.advisor-name {
+  margin: 0 0 8px;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.advisor-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main > section:first-of-type:has(> h1:first-child) .advisor p {
+  max-width: none;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+main > section:first-of-type:has(> h1:first-child) .advisor .advisor-kicker,
+main > section:first-of-type:has(> h1:first-child) .advisor .advisor-role,
+main > section:first-of-type:has(> h1:first-child) .advisor .advisor-meta {
+  color: var(--muted);
+}
+
+main > section:first-of-type:has(> h1:first-child) .advisor .advisor-kicker {
+  font-size: 0.95rem;
+}
+
+.advisor-kicker {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.advisor-role,
+.advisor-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.advisor-meta {
+  margin-top: 16px;
+}
+
+.advisor-bio p {
+  margin: 0 0 0.95rem;
+}
+
+.advisor-bio p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 860px) {
+  .advisor {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
